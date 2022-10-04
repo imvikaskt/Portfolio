@@ -1,10 +1,8 @@
 <h1 align="center">Hi 👋, I'm Vikas kumar</h1>
 <h3 align="center">A passionate frontend developer from India</h3>
 
-<img src="https:https://1.bp.blogspot.com/-7A4WynwLsMw/XbBpCXG8fHI/AAAAAAAAMt4/uOa1bpLskYgrwGbllhSu2SDj_Mig8SXJQCLcBGAsYHQ/s1600/2000_600px.gif" alt="imvikaskt" />
-
-<p align="left"> <img src="https://komarev.com/ghpvc/?username=imvikaskt&label=Profile%20views&color=0e75b6&style=flat" alt="imvikaskt" /> </p>
-
+ 
+ 
 <p align="left"> <a href="https://twitter.com/https://twitter.com/imvikaskt" target="blank"><img src="https://img.shields.io/twitter/follow/https://twitter.com/imvikaskt?logo=twitter&style=for-the-badge" alt="https://twitter.com/imvikaskt" /></a> </p>
 
 
