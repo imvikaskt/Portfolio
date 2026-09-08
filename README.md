@@ -1,3 +1,9 @@
+<head>
+ <meta name="google-adsense-account" content="ca-pub-6926392316665978">
+ <Title>Hi 👋, I'm Vikas</Title>
+</head>
+
+
 <h1 align="center">Hi 👋, I'm Vikas kumar</h1>
 <h3 align="center">A passionate frontend developer from India</h3>
 
