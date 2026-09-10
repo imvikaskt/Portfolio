@@ -4,25 +4,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="google-adsense-account" content="ca-pub-6926392316665978">
-    <title>Vikas Kumar - Front-End Developer</title>
-	
-	
-	<link rel="icon" type="image/x-icon" href="favicon.png"/>
+    <meta name="google-adsense-account" content="ca-pub-6926392316665978">
+    <title>Vikas Design | Design Studio &amp; UI/UX Academy</title>
+    <meta name="description" content="UI/UX design, website and mobile app design services, and a practical 90-day UI/UX course with Figma, real projects and portfolio building in Ghaziabad.">
+    
+    
+    <link rel="icon" type="image/x-icon" href="favicon.png"/>
 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-	
-	
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
+    
+    
+    
  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6926392316665978"
      crossorigin="anonymous"></script>
 
  <script async custom-element="amp-auto-ads"
         src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js">
 </script>
-	
-	
+    
+    
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <style>
@@ -1098,576 +1101,437 @@
                 background: rgba(0, 0, 0, 0.7);
             }
         }
+
+        /* UI/UX training */
+        .training-panel { padding: clamp(24px, 5vw, 64px); border: 1px solid rgba(255,189,57,.35); border-radius: 24px; background: radial-gradient(ellipse at top right, rgba(255,189,57,.14), transparent 65%), #101013; }
+        .training-label { color: var(--primary-gold); font-size: 13px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; }
+        .training-heading { font-size: clamp(32px, 4.5vw, 56px); line-height: 1.15; margin: 20px 0; }
+        .training-heading span { color: var(--primary-gold); }
+        .training-features { list-style: none; padding: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; margin: 28px 0; }
+        .training-features li { display: flex; gap: 12px; align-items: center; color: #eee; font-size: 14px; }
+        .training-features i { color: var(--primary-gold); width: 24px; flex-shrink: 0; font-size: 20px; text-align: center; }
+        .training-summary { padding: 30px; background: rgba(255,255,255,.04); border: 1px solid var(--glass-border); border-radius: 20px; }
+        .training-stats { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 12px; }
+        .training-stat { padding: 18px 10px; border: 1px solid var(--glass-border); border-radius: 12px; text-align: center; }
+        .training-stat strong { display: block; color: var(--primary-gold); font-size: 40px; }
+        .training-stat span { font-size: 12px; color: #ddd; }
+        .training-whatsapp { color: #e8e8e8; display: inline-flex; align-items: center; gap: 8px; padding: 8px 0; }
+        .training-whatsapp:hover { color: var(--primary-gold); }
+        #trainingModal .modal-content { background: #151519; color: #d4d4dc; border: 1px solid rgba(255,189,57,.4); border-radius: 20px; }
+        #trainingModal .modal-header { border-color: var(--glass-border); }
+        #trainingModal .form-label { color: #eee; font-size: 14px; }
+        #trainingModal .form-control { margin-bottom: 0; }
+        #trainingModal select option { background: #151519; color: #fff; }
+        #trainingModal .btn-custom { width: 100%; }
+        @media (max-width: 575px) {
+            .training-features { grid-template-columns: 1fr; }
+            .training-summary { padding: 20px; }
+            #training .section-title h2 { font-size: 28px; }
+            #training .section-title span { font-size: 60px; top: -25px; }
+        }
     </style>
+    <link rel="stylesheet" href="corporate.css">
 </head>
 
 <body>
 
-    <div class="cursor"></div>
-    <div class="cursor-follower"></div>
+    
 
-    <canvas id="particles-canvas"></canvas>
-
-    <nav class="navbar navbar-expand-lg fixed-top">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <nav class="navbar navbar-expand-lg fixed-top" data-bs-theme="dark" aria-label="Main navigation">
         <div class="container">
-            <a class="navbar-brand" href="#">
-			<img src="logo.png" title="UI/UX Designer" style="max-height: 50px;">
-			<span>.</span></a>
-            <button class="navbar-toggler bg-secondary" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+            <a class="navbar-brand brand-lockup" href="#home"><img src="logo.png" alt="" width="45" height="45"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                <ul class="navbar-nav align-items-lg-center">
                     <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
                     <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#resume">Resume</a></li>
-
-                    <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#portfolio">Our Work</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#training">Academy</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li class="nav-item ms-lg-4"><button class="btn btn-custom nav-apply" type="button" data-bs-toggle="modal" data-bs-target="#trainingModal">Apply Now <i class="fas fa-arrow-right ms-2" aria-hidden="true"></i></button></li>
                 </ul>
             </div>
         </div>
     </nav>
+    <main id="main">
 
-    <section id="home" class="hero-section">
-        <div class="hero-content" data-aos="zoom-in" data-aos-duration="1200">
-            <h4>HELLO WORLD!</h4>
-            <h1>I am <span class="text-gradient">Vikas Kumar</span></h1>
-            <h3 class="mb-4 text-white">I'm a <span class="typed-text"></span></h3>
-            <div class="mt-4" style="display: flex; justify-content: center; gap: 15px; flex-wrap: wrap;">
-                <a href="#contact" class="btn btn-custom">Hire Me</a>
-                <!-- <a href="#resume" class="btn btn-custom"
-                    style="background: transparent; color: white; border: 1px solid white;">Download CV</a> -->
-            </div>
-        </div>
-
-        <!-- Skills Marquee -->
-        <div class="skills-marquee">
-            <div class="marquee-track">
-                <div class="skill-item">
-                    <i class="skill-icon fab fa-html5"></i>
-                    <span class="skill-name">HTML5</span>
-                </div>
-                <div class="skill-item">
-                    <i class="skill-icon fab fa-css3-alt"></i>
-                    <span class="skill-name">CSS3</span>
-                </div>
-                <div class="skill-item">
-                    <i class="skill-icon fab fa-js"></i>
-                    <span class="skill-name">JavaScript</span>
-                </div>
-                <div class="skill-item">
-                    <i class="skill-icon fab fa-react"></i>
-                    <span class="skill-name">React.js</span>
-                </div>
-                <div class="skill-item">
-                    <i class="skill-icon fab fa-figma"></i>
-                    <span class="skill-name">Figma</span>
-                </div>
-                <div class="skill-item">
-                    <i class="skill-icon fab fa-bootstrap"></i>
-                    <span class="skill-name">Bootstrap</span>
-                </div>
-                <div class="skill-item">
-                    <i class="skill-icon fab fa-html5"></i>
-                    <span class="skill-name">HTML5</span>
-                </div>
-                <div class="skill-item">
-                    <i class="skill-icon fab fa-css3-alt"></i>
-                    <span class="skill-name">CSS3</span>
-                </div>
-                <div class="skill-item">
-                    <i class="skill-icon fab fa-js"></i>
-                    <span class="skill-name">JavaScript</span>
-                </div>
-                <div class="skill-item">
-                    <i class="skill-icon fab fa-react"></i>
-                    <span class="skill-name">React.js</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="about" class="py-5" style="position: relative; overflow: hidden; margin: 120px 0;">
+    <section id="home" class="corporate-hero">
+        <canvas id="hero-particles" aria-hidden="true"></canvas>
+        <div class="hero-aurora aurora-one" aria-hidden="true"></div>
+        <div class="hero-aurora aurora-two" aria-hidden="true"></div>
+        <button class="motion-toggle" type="button" aria-pressed="false"><i class="fas fa-pause" aria-hidden="true"></i><span>Pause motion</span></button>
         <div class="container">
-            <div class="section-title" data-aos="fade-up">
-                <span>About</span>
-                <h2>About Me</h2>
-            </div>
             <div class="row align-items-center g-5">
-                <div class="col-lg-5" data-aos="fade-right">
-                    <div style="position: relative; perspective: 1000px;">
-                        <div style="position: relative; transform-style: preserve-3d; transition: 0.6s;"
-                            class="about-img-wrapper">
-                            <div
-                                style="position: absolute; inset: -20px; background: linear-gradient(135deg, var(--primary-gold), #ffca2c); border-radius: 30px; filter: blur(30px); opacity: 0.2; z-index: -1;">
-                            </div>
-                            <img src="profile3.jpg" alt="Vikas Kumar"
-                                style="width: 100%; border-radius: 30px; box-shadow: 0 10px 30px rgba(0,0,0,0.3); border: 3px solid var(--primary-gold);">
-                            <div class="experience-badge"
-                                style="position: absolute; bottom: -30px; right: -30px; width: 150px; height: 150px; background: linear-gradient(135deg, var(--primary-gold), #ffca2c); border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-direction: column; box-shadow: 0 10px 20px rgba(255, 189, 57, 0.3); border: 5px solid var(--bg-dark); cursor: pointer;">
-                                <h3 style="color: #000; font-size: 36px; font-weight: 900; margin: 0; line-height: 1;">
-                                    12 +</h3>
-                                <p
-                                    style="color: #000; font-size: 14px; font-weight: 600; margin: 0; text-transform: uppercase;">
-                                    Years</p>
-                            </div>
-                        </div>
+                <div class="col-lg-7">
+                    <p class="eyebrow"><span></span> DESIGN STUDIO &amp; UI/UX TRAINING CENTER</p>
+                    <h1><span class="hero-line">Better digital</span><span class="hero-line">experiences.</span><em class="hero-line">Brighter careers.</em></h1>
+                    <p class="hero-description">Thoughtful design for ambitious businesses. Practical UI/UX training for the next generation of designers.</p>
+                    <div class="d-flex flex-wrap gap-3 hero-actions">
+                        <a class="btn btn-custom" href="#services">Explore Our Services <i class="fas fa-arrow-right ms-2" aria-hidden="true"></i></a>
+                        <a class="btn btn-outline-gold" href="#training">Discover the Academy</a>
                     </div>
+                    <div class="hero-proof"><span><i class="fas fa-check" aria-hidden="true"></i> Industry-led learning</span><span><i class="fas fa-check" aria-hidden="true"></i> Real-world design</span></div>
                 </div>
-                <div class="col-lg-7" data-aos="fade-left">
-                    <div style="padding-left: 30px;">
-                        <h3 style="color: #fff; font-size: 36px; margin-bottom: 20px; font-weight: 800;">                            
-                            Front-End Developer 
-                            <span style="color: var(--primary-gold);">&</span> Sr. UI/UX Designer
-                        </h3>
-                        <p style="color: #d1d5db; font-size: 18px; line-height: 1.8; margin-bottom: 25px;">
-                            Hello! I'm <span style="color: var(--primary-gold); font-weight: 700;">Vikas Kumar</span>, 
-                            a passionate Front-End Developer & Sr. UI/UX Designer with <span style="color: var(--primary-gold); font-weight: 700;">12+ years</span> 
-                            of experience in creating stunning and responsive web applications, building scalable, responsive, and accessible web, mobile, and tablet applications for enterprise and consumer-facing products. Proven track record of delivering high-impact solutions for global clients including Kuwait Petroleum Corporation, KPMG, Protiviti, Boubyan Bank, and Eureka.
-                        </p>
-
-                        <p style="color: #d1d5db; font-size: 16px; line-height: 1.8; margin-bottom: 30px;">
-                            Specialized in <span style="color: var(--primary-gold);">React.js, Tailwind CSS, modern JavaScript,</span> and <span style="color: var(--primary-gold);">component-driven UI architecture</span>, with a strong foundation in <span style="color: var(--primary-gold);">human-centered modern UX design</span>. Adept at translating complex business requirements and user insights into elegant, high-performance interfaces that balance <span style="color: var(--primary-gold);">visual excellence, usability, and speed.</span>
-                        </p>
-
-                        <p style="color: #d1d5db; font-size: 16px; line-height: 1.8; margin-bottom: 30px;">
-                            Experienced across the full UI lifecycle—from <span style="color: var(--primary-gold);">user research, personas, wireframes, and interactive prototypes</span> to <span style="color: var(--primary-gold);">production-ready front-end implementation</span> within <span style="color: var(--primary-gold);">Agile and CI/CD environments.</span> Known for strong stakeholder collaboration, clean design systems, and delivering pixel-perfect UIs that scale efficiently.
-                        </p>
-
-
-                            
-                        <div class="row g-4 mb-4">
-                            <div class="col-md-6">
-                                <div style="padding: 20px; background: var(--glass-bg); border: 1px solid var(--glass-border); border-radius: 15px; backdrop-filter: blur(10px); transition: 0.3s;"
-                                    onmouseover="this.style.borderColor='var(--primary-gold)'; this.style.transform='translateX(10px)';"
-                                    onmouseout="this.style.borderColor='var(--glass-border)'; this.style.transform='translateX(0)';">
-                                    <div style="display: flex; align-items: center; gap: 15px;">
-                                        <i class="fas fa-envelope"
-                                            style="font-size: 28px; color: var(--primary-gold);"></i>
-                                        <div>
-                                            <p
-                                                style="margin: 0; font-size: 12px; color: #9ca3af; text-transform: uppercase; letter-spacing: 1px;">
-                                                Email</p>
-                                            <a href="mailto:vikas.vikaskumar.kumar19@gmail.com"
-                                                style="margin: 0; color: #fff; font-weight: 600; font-size: 13px; display: block;">vikas.vikaskumar.kumar19@gmail.com</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div style="padding: 20px; background: var(--glass-bg); border: 1px solid var(--glass-border); border-radius: 15px; backdrop-filter: blur(10px); transition: 0.3s;"
-                                    onmouseover="this.style.borderColor='var(--primary-gold)'; this.style.transform='translateX(10px)';"
-                                    onmouseout="this.style.borderColor='var(--glass-border)'; this.style.transform='translateX(0)';">
-                                    <div style="display: flex; align-items: center; gap: 15px;">
-                                        <i class="fas fa-phone"
-                                            style="font-size: 28px; color: var(--primary-gold);"></i>
-                                        <div>
-                                            <p
-                                                style="margin: 0; font-size: 12px; color: #9ca3af; text-transform: uppercase; letter-spacing: 1px;">
-                                                Phone</p>
-                                            <a href="tel:+917983744423"
-                                                style="margin: 0; color: #fff; font-weight: 600; font-size: 14px; display: block;">+91
-                                                7983744423</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div style="padding: 20px; background: var(--glass-bg); border: 1px solid var(--glass-border); border-radius: 15px; backdrop-filter: blur(10px); transition: 0.3s;"
-                                    onmouseover="this.style.borderColor='var(--primary-gold)'; this.style.transform='translateX(10px)';"
-                                    onmouseout="this.style.borderColor='var(--glass-border)'; this.style.transform='translateX(0)';">
-                                    <div style="display: flex; align-items: center; gap: 15px;">
-                                        <i class="fas fa-map-marker-alt"
-                                            style="font-size: 28px; color: var(--primary-gold);"></i>
-                                        <div>
-                                            <p
-                                                style="margin: 0; font-size: 12px; color: #9ca3af; text-transform: uppercase; letter-spacing: 1px;">
-                                                Location</p>
-                                            <p style="margin: 0; color: #fff; font-weight: 600; font-size: 14px;">
-                                                Berhampur, Ghaziabad, India</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div style="padding: 20px; background: var(--glass-bg); border: 1px solid var(--glass-border); border-radius: 15px; backdrop-filter: blur(10px); transition: 0.3s;"
-                                    onmouseover="this.style.borderColor='var(--primary-gold)'; this.style.transform='translateX(10px)';"
-                                    onmouseout="this.style.borderColor='var(--glass-border)'; this.style.transform='translateX(0)';">
-                                    <div style="display: flex; align-items: center; gap: 15px;">
-                                        <i class="fas fa-briefcase"
-                                            style="font-size: 28px; color: var(--primary-gold);"></i>
-                                        <div>
-                                            <p
-                                                style="margin: 0; font-size: 12px; color: #9ca3af; text-transform: uppercase; letter-spacing: 1px;">
-                                                Experience</p>
-                                            <p style="margin: 0; color: #fff; font-weight: 600; font-size: 14px;">12 +
-                                                Years</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <a href="#contact" class="btn btn-custom">Let's Talk <i class="fas fa-arrow-right ms-2"></i></a>
-                    </div>
+                <div class="col-lg-5">
+                    <div class="academy-stage">
+                    <div class="academy-orbit" aria-hidden="true"></div>
+                    <div class="floating-note note-figma" aria-hidden="true"><i class="fab fa-figma"></i> Ideas into interfaces</div>
+                    <div class="floating-note note-spark" aria-hidden="true"><i class="fas fa-wand-magic-sparkles"></i> Create your next chapter</div>
+                    <aside class="hero-course" aria-labelledby="heroCourseTitle">
+                        <div class="course-topline"><span class="eyebrow mb-0">THE ACADEMY</span><span class="admissions-badge">Admissions Open</span></div>
+                        <div class="course-symbol"><i class="fab fa-figma" aria-hidden="true"></i><span>CREATE.<br>DESIGN.<br>GROW.</span></div>
+                        <h2 id="heroCourseTitle">Your next chapter<br>starts with UI/UX.</h2>
+                        <p>Go from curious beginner to confident designer with hands-on live training.</p>
+                        <div class="course-facts"><div><strong>90</strong><span>Days of learning</span></div><div><strong>3</strong><span>Real projects</span></div><div><strong>1</strong><span>Certificate</span></div></div>
+                        <button class="btn btn-custom w-100" type="button" data-bs-toggle="modal" data-bs-target="#trainingModal">Apply for the Course <i class="fas fa-arrow-right ms-2" aria-hidden="true"></i></button>
+                        <p class="course-note">Beginners welcome. No design experience needed.</p>
+                    </aside></div>
+                </div>
+            </div>
+            <div class="expertise-strip" aria-label="Design and development expertise">
+                <div class="expertise-track">
+                    <div class="expertise-group"><span class="marquee-label">DESIGN TO DEVELOPMENT</span><span><i class="fab fa-figma" aria-hidden="true"></i>Figma</span><span><i class="fas fa-bezier-curve" aria-hidden="true"></i>UI/UX Design</span><span><i class="fab fa-react" aria-hidden="true"></i>React</span><span><i class="fas fa-wand-magic-sparkles" aria-hidden="true"></i>AI Design</span></div>
+                    <div class="expertise-group" aria-hidden="true"><span class="marquee-label">DESIGN TO DEVELOPMENT</span><span><i class="fab fa-figma" aria-hidden="true"></i>Figma</span><span><i class="fas fa-bezier-curve" aria-hidden="true"></i>UI/UX Design</span><span><i class="fab fa-react" aria-hidden="true"></i>React</span><span><i class="fas fa-wand-magic-sparkles" aria-hidden="true"></i>AI Design</span></div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="services" class="container py-5" style="margin: 120px auto;">
-        <div class="section-title" data-aos="fade-up">
-            <span>Services</span>
-            <h2>What I Do</h2>
-        </div>
-        <div class="row g-4">
-            <div class="col-md-4" data-aos="fade-up">
-                <div class="glass-card text-center">
-                    <div class="service-icon"><i class="fas fa-laptop-code"></i></div>
-                    <h4 style="position: relative;">Front-End Developer
-                        <span
-                            style="position: absolute; bottom: -8px; left: 50%; transform: translateX(-50%); width: 40px; height: 2px; background: linear-gradient(90deg, var(--primary-gold), transparent);"></span>
-                    </h4>
-                    <p>Building responsive websites using HTML5, CSS3, JavaScript, React, and Tailwind CSS.</p>
-                </div>
+    <section id="about" class="container py-5">
+        <div class="section-title"><span>01 / ABOUT US</span><h2>Great design starts with people.<br><em>So do we.</em></h2><p>Real industry experience. Fresh perspectives. A shared passion for creating something meaningful.</p></div>
+        <div class="about-editorial">
+            <div class="about-portrait">
+                <div class="portrait-frame"><img src="profile3.jpg" alt="Vikas Kumar, mentor and senior UI/UX designer" loading="lazy"></div>
+                <div class="portrait-caption"><span>THE EXPERIENCE BEHIND THE IDEAS</span><h3>Vikas Kumar</h3><p>Sr. UI/UX Designer &amp; Front-End Developer</p></div>
+                <div class="experience-seal"><strong>14+</strong><span>YEARS IN<br>THE MAKING</span></div>
             </div>
-            <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
-                <div class="glass-card text-center">
-                    <div class="service-icon"><i class="fas fa-pencil-ruler"></i></div>
-                    <h4 style="position: relative;">Sr. UI/UX Designer
-                        <span
-                            style="position: absolute; bottom: -8px; left: 50%; transform: translateX(-50%); width: 40px; height: 2px; background: linear-gradient(90deg, var(--primary-gold), transparent);"></span>
-                    </h4>
-                    <p>Designing beautiful user interfaces and prototypes using Figma and Adobe tools.</p>
+            <div class="about-story">
+                <span class="eyebrow">DESIGN IS OUR CRAFT. GROWTH IS OUR PURPOSE.</span>
+                <h3>A studio for bold ideas.<br>An academy for <em>bright minds.</em></h3>
+                <p>We bring the thinking behind real digital products into everything we do—from the experiences we build for businesses to the skills we share with emerging designers.</p>
+                <div class="about-pillars">
+                    <a href="#services" class="about-pillar"><span class="pillar-icon"><i class="fas fa-bezier-curve" aria-hidden="true"></i></span><span><strong>We create.</strong><small>Thoughtful websites, mobile experiences and interfaces built around people.</small></span><i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+                    <a href="#training" class="about-pillar"><span class="pillar-icon"><i class="fas fa-graduation-cap" aria-hidden="true"></i></span><span><strong>We empower.</strong><small>Hands-on learning, real projects and the confidence to start a design career.</small></span><i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
                 </div>
-            </div>
-            <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
-                <div class="glass-card text-center">
-                    <div class="service-icon"><i class="fas fa-rocket"></i></div>
-                    <h4 style="position: relative;">Responsive Design
-                        <span
-                            style="position: absolute; bottom: -8px; left: 50%; transform: translateX(-50%); width: 40px; height: 2px; background: linear-gradient(90deg, var(--primary-gold), transparent);"></span>
-                    </h4>
-                    <p>Creating mobile-friendly designs that work seamlessly across all devices.</p>
-                </div>
+                <div class="about-signoff"><span class="signoff-line"></span><span>Learn the craft. Make your mark.</span></div>
             </div>
         </div>
     </section>
 
-    <section id="skills" class="container py-5" style="margin: 120px auto;">
-        <div class="section-title" data-aos="fade-up">
-            <span>Skills</span>
-            <h2>My Expertise</h2>
-        </div>
-        <div class="row g-4">
-            
-             <div class="col-lg-12 col-md-12" data-aos="fade-up" data-aos-delay="100">
-                <div class="glass-card">
-                    <!-- <h5 class="text-white mb-3" style="position: relative;"><i class="fas fa-desktop text-warning me-2"></i>Operating Systems
-                        <span
-                            style="position: absolute; bottom: -5px; left: 0; width: 30px; height: 2px; background: linear-gradient(90deg, var(--primary-gold), transparent);"></span>
-                    </h5> -->
-                    <div class="skill-tags" style="display: flex; flex-wrap: wrap; gap: 8px;">
-                        <span class="skill-tag">Team Leadership & Development</span>
-                        <span class="skill-tag">Project Management</span>
-                        <span class="skill-tag">UI UX Information Architecture</span>
-                        <span class="skill-tag">Agile & Scrum Methodologies</span>
-                        <span class="skill-tag">Cross-functional Collaboration</span>
-                        <span class="skill-tag">Wireframeing & Prototyping</span>                        
-                        <span class="skill-tag">Debugging/Testing</span>
-                        <span class="skill-tag">XD/Photoshop/Illustrator</span>
-                        <span class="skill-tag">Figma/Zeplin/Sketch</span>
-                        <span class="skill-tag">HTML/CSS/JS/jQuery</span>
-                        <span class="skill-tag">UI Frameworks (Bootstrap, Angular, MVC .NET, PHP, Wordpress)</span>
-
+    <section id="services" class="container py-5">
+        <div class="section-title"><span>02 / DESIGN SERVICES</span><h2>Big ideas. Beautiful execution.</h2><p>Explore what we do. Hover over a card—or tap Explore—to discover your next step.</p></div>
+        <div class="services-grid">            <article class="service-flip" aria-label="UI/UX Design">
+                <div class="service-flip-inner">
+                    <div class="service-face service-front">
+                        <div class="service-top"><div class="service-icon"><i class="fas fa-pencil-ruler" aria-hidden="true"></i></div><span class="service-number">01</span></div>
+                        <h3>UI/UX Design</h3><p>Designing beautiful user interfaces and prototypes using Figma and Adobe tools.</p>
+                        <button class="flip-open" type="button" aria-expanded="false" aria-controls="service-back-1">Explore this service <i class="fas fa-arrow-right" aria-hidden="true"></i></button>
+                    </div>
+                    <div class="service-face service-back" id="service-back-1" inert aria-hidden="true">
+                        <button class="flip-close" type="button" aria-label="Back to UI/UX Design"><i class="fas fa-arrow-left" aria-hidden="true"></i></button>
+                        <i class="fas fa-pencil-ruler back-watermark" aria-hidden="true"></i>
+                        <span class="eyebrow">LET'S MAKE IT HAPPEN</span>
+                        <h3>UI/UX Design</h3>
+                        <p>Tell us what you have in mind. Let's explore the right next step together.</p>
+                        <button class="btn btn-custom service-apply" type="button" data-service="UI/UX Design" data-bs-toggle="modal" data-bs-target="#trainingModal">Apply Now <i class="fas fa-arrow-right ms-2" aria-hidden="true"></i></button>
                     </div>
                 </div>
-            </div>
-
-            
-            <!-- Operating Systems -->
-            <div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="100">
-                <div class="glass-card">
-                    <h5 class="text-white mb-3" style="position: relative;"><i
-                            class="fas fa-desktop text-warning me-2"></i>Operating Systems
-                        <span
-                            style="position: absolute; bottom: -5px; left: 0; width: 30px; height: 2px; background: linear-gradient(90deg, var(--primary-gold), transparent);"></span>
-                    </h5>
-                    <div class="skill-tags" style="display: flex; flex-wrap: wrap; gap: 8px;">
-                        <span class="skill-tag">Windows</span>
-                        <span class="skill-tag">Linux</span>
-                        <span class="skill-tag">macOS</span>
+            </article>
+            <article class="service-flip" aria-label="Learn AI Design">
+                <div class="service-flip-inner">
+                    <div class="service-face service-front">
+                        <div class="service-top"><div class="service-icon"><i class="fas fa-wand-magic-sparkles" aria-hidden="true"></i></div><span class="service-number">02</span></div>
+                        <h3>Learn AI Design</h3><p>Learn how to use AI tools and effective prompts to create visuals, explore layouts, and refine your designs.</p>
+                        <button class="flip-open" type="button" aria-expanded="false" aria-controls="service-back-2">Explore this service <i class="fas fa-arrow-right" aria-hidden="true"></i></button>
+                    </div>
+                    <div class="service-face service-back" id="service-back-2" inert aria-hidden="true">
+                        <button class="flip-close" type="button" aria-label="Back to Learn AI Design"><i class="fas fa-arrow-left" aria-hidden="true"></i></button>
+                        <i class="fas fa-wand-magic-sparkles back-watermark" aria-hidden="true"></i>
+                        <span class="eyebrow">LET'S MAKE IT HAPPEN</span>
+                        <h3>Learn AI Design</h3>
+                        <p>Tell us what you have in mind. Let's explore the right next step together.</p>
+                        <button class="btn btn-custom service-apply" type="button" data-service="Learn AI Design" data-bs-toggle="modal" data-bs-target="#trainingModal">Apply Now <i class="fas fa-arrow-right ms-2" aria-hidden="true"></i></button>
                     </div>
                 </div>
-            </div>
-
-            <!-- Web Technologies -->
-            <div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="200">
-                <div class="glass-card">
-                    <h5 class="text-white mb-3" style="position: relative;"><i
-                            class="fas fa-code text-warning me-2"></i>Web Technologies
-                        <span
-                            style="position: absolute; bottom: -5px; left: 0; width: 30px; height: 2px; background: linear-gradient(90deg, var(--primary-gold), transparent);"></span>
-                    </h5>
-                    <div class="skill-tags" style="display: flex; flex-wrap: wrap; gap: 8px;">
-                        <span class="skill-tag">HTML5</span>
-                        <span class="skill-tag">CSS3</span>
-                        <span class="skill-tag">JavaScript</span>
-                        <span class="skill-tag">jQuery</span>
-                        <span class="skill-tag">Bootstrap</span>
-                        <span class="skill-tag">Sass</span>
-                        <span class="skill-tag">Tailwind CSS</span>
-                        <span class="skill-tag">Semantic UI</span>
+            </article>
+            <article class="service-flip" aria-label="Mobile App Design">
+                <div class="service-flip-inner">
+                    <div class="service-face service-front">
+                        <div class="service-top"><div class="service-icon"><i class="fas fa-mobile-screen-button" aria-hidden="true"></i></div><span class="service-number">03</span></div>
+                        <h3>Mobile App Design</h3><p>Designing intuitive mobile app screens and interactive prototypes for smooth Android and iOS experiences.</p>
+                        <button class="flip-open" type="button" aria-expanded="false" aria-controls="service-back-3">Explore this service <i class="fas fa-arrow-right" aria-hidden="true"></i></button>
+                    </div>
+                    <div class="service-face service-back" id="service-back-3" inert aria-hidden="true">
+                        <button class="flip-close" type="button" aria-label="Back to Mobile App Design"><i class="fas fa-arrow-left" aria-hidden="true"></i></button>
+                        <i class="fas fa-mobile-screen-button back-watermark" aria-hidden="true"></i>
+                        <span class="eyebrow">LET'S MAKE IT HAPPEN</span>
+                        <h3>Mobile App Design</h3>
+                        <p>Tell us what you have in mind. Let's explore the right next step together.</p>
+                        <button class="btn btn-custom service-apply" type="button" data-service="Mobile App Design" data-bs-toggle="modal" data-bs-target="#trainingModal">Apply Now <i class="fas fa-arrow-right ms-2" aria-hidden="true"></i></button>
                     </div>
                 </div>
-            </div>
-
-            <!-- Frameworks & Libraries -->
-            <div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="300">
-                <div class="glass-card">
-                    <h5 class="text-white mb-3" style="position: relative;"><i
-                            class="fab fa-react text-warning me-2"></i>Frameworks & Libraries
-                        <span
-                            style="position: absolute; bottom: -5px; left: 0; width: 30px; height: 2px; background: linear-gradient(90deg, var(--primary-gold), transparent);"></span>
-                    </h5>
-                    <div class="skill-tags" style="display: flex; flex-wrap: wrap; gap: 8px;">
-                        <span class="skill-tag">AngularJS</span>
-                        <span class="skill-tag">ReactJS</span>
-                        <span class="skill-tag">UI Integration</span>
-                        <span class="skill-tag">Frameworks (Bootstrap, Angular, MVC .NET, PHP, Wordpress)</span>
+            </article>
+            <article class="service-flip" aria-label="Front-End Development">
+                <div class="service-flip-inner">
+                    <div class="service-face service-front">
+                        <div class="service-top"><div class="service-icon"><i class="fas fa-laptop-code" aria-hidden="true"></i></div><span class="service-number">04</span></div>
+                        <h3>Front-End Development</h3><p>Building responsive websites using HTML5, CSS3, JavaScript, React, and Tailwind CSS.</p>
+                        <button class="flip-open" type="button" aria-expanded="false" aria-controls="service-back-4">Explore this service <i class="fas fa-arrow-right" aria-hidden="true"></i></button>
+                    </div>
+                    <div class="service-face service-back" id="service-back-4" inert aria-hidden="true">
+                        <button class="flip-close" type="button" aria-label="Back to Front-End Development"><i class="fas fa-arrow-left" aria-hidden="true"></i></button>
+                        <i class="fas fa-laptop-code back-watermark" aria-hidden="true"></i>
+                        <span class="eyebrow">LET'S MAKE IT HAPPEN</span>
+                        <h3>Front-End Development</h3>
+                        <p>Tell us what you have in mind. Let's explore the right next step together.</p>
+                        <button class="btn btn-custom service-apply" type="button" data-service="Front-End Development" data-bs-toggle="modal" data-bs-target="#trainingModal">Apply Now <i class="fas fa-arrow-right ms-2" aria-hidden="true"></i></button>
                     </div>
                 </div>
-            </div>
-
-            <!-- UI/UX Design & Prototyping -->
-            <div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="400">
-                <div class="glass-card">
-                    <h5 class="text-white mb-3" style="position: relative;"><i
-                            class="fab fa-figma text-warning me-2"></i>UI/UX Design & Prototyping
-                        <span
-                            style="position: absolute; bottom: -5px; left: 0; width: 30px; height: 2px; background: linear-gradient(90deg, var(--primary-gold), transparent);"></span>
-                    </h5>
-                    <div class="skill-tags" style="display: flex; flex-wrap: wrap; gap: 8px;">
-                        <span class="skill-tag">Figma</span>
-                        <span class="skill-tag">Adobe Photoshop</span>
-                        <span class="skill-tag">Adobe Illustrator</span>
-                        <span class="skill-tag">Adobe XD</span>
-                        <span class="skill-tag">CorelDRAW</span>
-                        <span class="skill-tag">UI Mockups</span>
-                        <span class="skill-tag">Interactive Prototyping</span>
-                        <span class="skill-tag">Responsive Layout Design</span>
-                        <span class="skill-tag">User Interface Design</span>
-                        <span class="skill-tag">Strategy & vision presentations</span>
-                        <span class="skill-tag">User Research</span>
-                        <span class="skill-tag">Wireframes & mock ups</span>
-                        <span class="skill-tag">App UI Design</span>
-                        <span class="skill-tag">Prototyping using Adobe XD & Invision</span>
-                        <span class="skill-tag">Interactive ow with HTML/ CSS/JS/jQuery</span>                        
+            </article>
+            <article class="service-flip" aria-label="Responsive Design">
+                <div class="service-flip-inner">
+                    <div class="service-face service-front">
+                        <div class="service-top"><div class="service-icon"><i class="fas fa-rocket" aria-hidden="true"></i></div><span class="service-number">05</span></div>
+                        <h3>Responsive Design</h3><p>Creating mobile-friendly designs that work seamlessly across all devices.</p>
+                        <button class="flip-open" type="button" aria-expanded="false" aria-controls="service-back-5">Explore this service <i class="fas fa-arrow-right" aria-hidden="true"></i></button>
+                    </div>
+                    <div class="service-face service-back" id="service-back-5" inert aria-hidden="true">
+                        <button class="flip-close" type="button" aria-label="Back to Responsive Design"><i class="fas fa-arrow-left" aria-hidden="true"></i></button>
+                        <i class="fas fa-rocket back-watermark" aria-hidden="true"></i>
+                        <span class="eyebrow">LET'S MAKE IT HAPPEN</span>
+                        <h3>Responsive Design</h3>
+                        <p>Tell us what you have in mind. Let's explore the right next step together.</p>
+                        <button class="btn btn-custom service-apply" type="button" data-service="Responsive Design" data-bs-toggle="modal" data-bs-target="#trainingModal">Apply Now <i class="fas fa-arrow-right ms-2" aria-hidden="true"></i></button>
                     </div>
                 </div>
-            </div>
-
-            <!-- Development Tools -->
-            <div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="500">
-                <div class="glass-card">
-                    <h5 class="text-white mb-3" style="position: relative;"><i
-                            class="fas fa-tools text-warning me-2"></i>Development Tools
-                        <span
-                            style="position: absolute; bottom: -5px; left: 0; width: 30px; height: 2px; background: linear-gradient(90deg, var(--primary-gold), transparent);"></span>
-                    </h5>
-                    <div class="skill-tags" style="display: flex; flex-wrap: wrap; gap: 8px;">
-                        <span class="skill-tag">Sublime Text</span>
-                        <span class="skill-tag">Notepad++</span>
-                        <span class="skill-tag">Visual Studio Code</span>
-                        <span class="skill-tag">Visual Studio</span>
-                        <span class="skill-tag">Cursor AI</span>
-                        <span class="skill-tag">GitHub Copilot</span>
+            </article>
+            <article class="service-flip" aria-label="Website Design">
+                <div class="service-flip-inner">
+                    <div class="service-face service-front">
+                        <div class="service-top"><div class="service-icon"><i class="fas fa-desktop" aria-hidden="true"></i></div><span class="service-number">06</span></div>
+                        <h3>Website Design</h3><p>Crafting modern website layouts and landing pages that reflect your brand and make navigation effortless.</p>
+                        <button class="flip-open" type="button" aria-expanded="false" aria-controls="service-back-6">Explore this service <i class="fas fa-arrow-right" aria-hidden="true"></i></button>
+                    </div>
+                    <div class="service-face service-back" id="service-back-6" inert aria-hidden="true">
+                        <button class="flip-close" type="button" aria-label="Back to Website Design"><i class="fas fa-arrow-left" aria-hidden="true"></i></button>
+                        <i class="fas fa-desktop back-watermark" aria-hidden="true"></i>
+                        <span class="eyebrow">LET'S MAKE IT HAPPEN</span>
+                        <h3>Website Design</h3>
+                        <p>Tell us what you have in mind. Let's explore the right next step together.</p>
+                        <button class="btn btn-custom service-apply" type="button" data-service="Website Design" data-bs-toggle="modal" data-bs-target="#trainingModal">Apply Now <i class="fas fa-arrow-right ms-2" aria-hidden="true"></i></button>
                     </div>
                 </div>
-            </div>
+            </article></div></section>
 
-            <!-- AI Skills -->
-            <div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="600">
-                <div class="glass-card">
-                    <h5 class="text-white mb-3" style="position: relative;"><i
-                            class="fas fa-robot text-warning me-2"></i>AI Skills
-                        <span
-                            style="position: absolute; bottom: -5px; left: 0; width: 30px; height: 2px; background: linear-gradient(90deg, var(--primary-gold), transparent);"></span>
-                    </h5>
-                    <div class="skill-tags" style="display: flex; flex-wrap: wrap; gap: 8px;">
-                        <span class="skill-tag">Prompt Writing</span>
-                        <span class="skill-tag">AI-Assisted Development</span>
-                        <span class="skill-tag">Cursor AI</span>
-                        <span class="skill-tag">GitHub Copilot</span>
-                        <span class="skill-tag">ChatGPT</span>
-                    </div>
-                </div>
-            </div>
+    <section id="skills" class="container py-5">
+        <div class="section-title"><span>03 / OUR APPROACH</span><h2>From first idea to final experience.</h2><p>A clear process for creating thoughtful products—and a practical framework you will learn in the academy.</p></div>
+        <div class="process-grid">
+            <article><span class="process-number">01</span><h3>Discover</h3><p>Understand the audience, define the problem and uncover what matters.</p></article>
+            <article><span class="process-number">02</span><h3>Design</h3><p>Explore ideas through user flows, wireframes and interactive prototypes.</p></article>
+            <article><span class="process-number">03</span><h3>Build</h3><p>Bring the design to life with responsive interfaces and reusable components.</p></article>
+            <article><span class="process-number">04</span><h3>Refine</h3><p>Review usability, test across devices and improve the details.</p></article>
         </div>
     </section>
 
-    <section id="resume" class="container py-5" style="margin: 120px auto;">
-        <div class="section-title" data-aos="fade-up">
-            <span>Resume</span>
-            <h2>My Journey</h2>
-        </div>
-        <div class="row g-5">
-            <!-- Left Side: Circular Timeline for Education -->
-             <div class="col-lg-12" data-aos="fade-left">
-                <h3 class="mb-5 text-white" style="font-size: 28px; position: relative;"><i
-                        class="fas fa-briefcase text-warning me-3"></i>Experience
-                    <span
-                        style="position: absolute; bottom: -8px; left: 0; width: 60px; height: 3px; background: linear-gradient(90deg, var(--primary-gold), transparent);"></span>
-                </h3>
-                <div>
-                    <div style="position: relative; padding-left: 100px; margin-bottom: 35px;">
-                        <div
-                            style="position: absolute; left: 0; top: 0; width: 75px; height: 75px; background: linear-gradient(135deg, var(--primary-gold), #ffca2c); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 32px; font-weight: 900; color: #000; box-shadow: 0 5px 20px rgba(255, 189, 57, 0.4);">
-                            01</div>
-                        <div style="background: var(--glass-bg); border-left: 4px solid var(--primary-gold); padding: 25px; border-radius: 12px; backdrop-filter: blur(10px); border: 1px solid var(--glass-border); transition: 0.3s;"
-                            onmouseover="this.style.transform='translateX(5px)'; this.style.borderColor='var(--primary-gold)';"
-                            onmouseout="this.style.transform='translateX(0)'; this.style.borderColor='var(--glass-border)';">
-                            <div
-                                style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 12px; flex-wrap: wrap; gap: 10px;">
-                                <h4 style="color: #fff; margin: 0; font-size: 20px;">Sr. Front-End Developer / Sr. UI/UX
-                                    Designer</h4>
-                                <!-- <span
-                                    style="background: var(--primary-gold); color: #000; padding: 5px 15px; border-radius: 20px; font-size: 11px; font-weight: 700; white-space: nowrap;">2022
-                                    - Present</span> -->
-                            </div>
-                            <p
-                                style="color: var(--primary-gold); font-weight: 600; margin-bottom: 8px; font-size: 15px;">
-                                Intigate Technology Pvt. Ltd.
-                            </p>
-                            <p>JAN 2013 - PRESENT, NOIDA</p>
-                            <p style="color: #9ca3af; margin: 0; line-height: 1.6; font-size: 14px;">I lead a team to
-                                design new inte ace & mockups then develop
-                                front end pages & maintaining style guides. I create wireframes,
-                                prototypes a er clients brie ng. I closely work on market
-                                research to get a be er ux. Conveying concepts and providing design direction to the
-                                team
-                                through renderings, images and e ective wri en and verbal
-                                communication; Lead the team designing the overall graphic
-                                image including creating concept design layout and illustrations</p>
-                        </div>
-                    </div>
 
-                    <div style="position: relative; padding-left: 100px; margin-bottom: 35px;">
-                        <div
-                            style="position: absolute; left: 0; top: 0; width: 75px; height: 75px; background: linear-gradient(135deg, var(--primary-gold), #ffca2c); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 32px; font-weight: 900; color: #000; box-shadow: 0 5px 20px rgba(255, 189, 57, 0.4);">
-                            02</div>
-                        <div style="background: var(--glass-bg); border-left: 4px solid var(--primary-gold); padding: 25px; border-radius: 12px; backdrop-filter: blur(10px); border: 1px solid var(--glass-border); transition: 0.3s;"
-                            onmouseover="this.style.transform='translateX(5px)'; this.style.borderColor='var(--primary-gold)';"
-                            onmouseout="this.style.transform='translateX(0)'; this.style.borderColor='var(--glass-border)';">
-                            <h4 style="color: #fff; margin: 0 0 12px 0; font-size: 20px;">Hivish Technology Pvt. Ltd.
-                            </h4>
-                            <p>JAN 2012 - DEC 2012, DELHi</p>
-                            <p
-                                style="color: var(--primary-gold); font-weight: 600; margin-bottom: 8px; font-size: 15px;">
-                                Front-End Developer</p>
-                            <p style="color: #9ca3af; margin: 0; line-height: 1.6; font-size: 14px;">Redesigning and
-                                develop websites, Product branding - Business
-                                cards, displays, collateral, brochures. Responsive web designing using HTML, CSS,
-                                Javascript Bootstrap.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div style="position: relative; padding-left: 100px;">
-                        <div
-                            style="position: absolute; left: 0; top: 0; width: 75px; height: 75px; background: linear-gradient(135deg, var(--primary-gold), #ffca2c); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 32px; font-weight: 900; color: #000; box-shadow: 0 5px 20px rgba(255, 189, 57, 0.4);">
-                            03</div>
-                        <div style="background: var(--glass-bg); border-left: 4px solid var(--primary-gold); padding: 25px; border-radius: 12px; backdrop-filter: blur(10px); border: 1px solid var(--glass-border); transition: 0.3s;"
-                            onmouseover="this.style.transform='translateX(5px)'; this.style.borderColor='var(--primary-gold)';"
-                            onmouseout="this.style.transform='translateX(0)'; this.style.borderColor='var(--glass-border)';">
-                            <h4 style="color: #fff; margin: 0 0 12px 0; font-size: 20px;">VT Info Network Pvt. Ltd. (Dainik Bhaskar Group)</h4>
-                            <p>MAR 2011 - DEC 2011, DELHi</p>
-                            <p
-                                style="color: var(--primary-gold); font-weight: 600; margin-bottom: 8px; font-size: 15px;">
-                                Web Designer</p>
-                            <p style="color: #9ca3af; margin: 0; line-height: 1.6; font-size: 14px;">Redesigning and
-                                develop websites, business cards, displays,
-                                collateral. Responsive web designing using HTML, CSS,
-                                Javascript Bootstrap.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-           
-
-            <!-- Right Side: Layout 5 for Experience -->
-              <div class="col-lg-12 mb-5" data-aos="fade-right">
-                <h3 class="mb-5 text-white" style="font-size: 28px; position: relative;">
-                    <i class="fas fa-graduation-cap text-warning me-3"></i>Education
-                    <span
-                        style="position: absolute; bottom: -8px; left: 0; width: 60px; height: 3px; background: linear-gradient(90deg, var(--primary-gold), transparent);"></span>
-                </h3>
-
-                <div class="education-timeline">
-                    <!-- BCA -->
-                    <div class="edu-card" data-aos="fade-up" data-aos-delay="100">
-                        <div class="edu-year">2010-11</div>
-                        <div class="edu-content">
-                            <div class="edu-icon">
-                                <i class="fas fa-graduation-cap"></i>
-                            </div>
-                            <div class="edu-details">
-                                <h4>Diploma in Web Designing</h4>
-                                <p class="edu-institute">Flas'n Media Institute</p>
-                                <!-- <div class="edu-grade">CGPA: <span>7.81</span></div> -->
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- 12th HSC -->
-                    <div class="edu-card" data-aos="fade-up" data-aos-delay="200">
-                        <div class="edu-year">2009</div>
-                        <div class="edu-content">
-                            <div class="edu-icon">
-                                <i class="fas fa-book"></i>
-                            </div>
-                            <div class="edu-details">
-                                <h4>Higher Secondary Certificate</h4>
-                                <p class="edu-institute">Agroha Inter Collage</p>
-                                <!-- <div class="edu-grade">Percentage: <span>80.57%</span></div> -->
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- 10th SSC -->
-                    <div class="edu-card" data-aos="fade-up" data-aos-delay="300">
-                        <div class="edu-year">2007</div>
-                        <div class="edu-content">
-                            <div class="edu-icon">
-                                <i class="fas fa-school"></i>
-                            </div>
-                            <div class="edu-details">
-                                <h4>Higher Secondary Certificate</h4>
-                                <p class="edu-institute">Agroha Inter Collage</p>
-                                <!-- <div class="edu-grade">Percentage: <span>65.57%</span></div> -->
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            
-        </div>
-    </section>
 
     <section id="portfolio" class="container py-5" style="margin: 120px auto;">
-        <div class="section-title" data-aos="fade-up">
-            <span>Portfolio</span>
-            <h2>Featured Works</h2>
+        <div class="section-title">
+            <span>04 / SELECTED WORK</span>
+            <h2>DESIGN GALLERY</h2>
+            <p>A collection of ideas, interfaces & digital experiences...</p>
         </div>
+
+
         <div class="row g-4">
-            <div class="col-md-4" data-aos="zoom-in">
+            <div class="col-md-3">
+                <div class="portfolio-item">
+                    <a href="g_img_01.png" data-fancybox="gallery" data-caption="ui ux Design"><img src="g_img_01.png" alt="ui ux Design" /></a>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="portfolio-item">
+                    <a href="g_img_02.png" data-fancybox="gallery" data-caption="ui ux Design"><img src="g_img_02.png" alt="ui ux Design" /></a>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="portfolio-item">
+                    <a href="g_img_03.png" data-fancybox="gallery" data-caption="ui ux Design"><img src="g_img_03.png" alt="ui ux Design" /></a>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="portfolio-item">
+                    <a href="g_img_04.png" data-fancybox="gallery" data-caption="ui ux Design"><img src="g_img_04.png" alt="ui ux Design" /></a>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="portfolio-item">
+                    <a href="g_img_05.png" data-fancybox="gallery" data-caption="ui ux Design"><img src="g_img_05.png" alt="ui ux Design" /></a>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="portfolio-item">
+                    <a href="g_img_06.png" data-fancybox="gallery" data-caption="ui ux Design"><img src="g_img_06.png" alt="ui ux Design" /></a>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="portfolio-item">
+                    <a href="g_img_07.png" data-fancybox="gallery" data-caption="ui ux Design"><img src="g_img_07.png" alt="ui ux Design" /></a>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="portfolio-item">
+                    <a href="g_img_08.png" data-fancybox="gallery" data-caption="ui ux Design"><img src="g_img_08.png" alt="ui ux Design" /></a>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="portfolio-item">
+                    <a href="g_img_09.png" data-fancybox="gallery" data-caption="ui ux Design"><img src="g_img_09.png" alt="ui ux Design" /></a>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="portfolio-item">
+                    <a href="g_img_10.png" data-fancybox="gallery" data-caption="ui ux Design"><img src="g_img_10.png" alt="ui ux Design" /></a>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="portfolio-item">
+                    <a href="g_img_11.png" data-fancybox="gallery" data-caption="ui ux Design"><img src="g_img_11.png" alt="ui ux Design" /></a>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="portfolio-item">
+                    <a href="g_img_12.png" data-fancybox="gallery" data-caption="ui ux Design"><img src="g_img_12.png" alt="ui ux Design" /></a>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="portfolio-item">
+                    <a href="g_img_13.png" data-fancybox="gallery" data-caption="ui ux Design"><img src="g_img_13.png" alt="ui ux Design" /></a>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="portfolio-item">
+                    <a href="g_img_14.png" data-fancybox="gallery" data-caption="ui ux Design"><img src="g_img_14.png" alt="ui ux Design" /></a>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="portfolio-item">
+                    <a href="g_img_15.png" data-fancybox="gallery" data-caption="ui ux Design"><img src="g_img_15.png" alt="ui ux Design" /></a>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="portfolio-item">
+                    <a href="g_img_16.png" data-fancybox="gallery" data-caption="ui ux Design"><img src="g_img_16.png" alt="ui ux Design" /></a>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="portfolio-item">
+                    <a href="g_img_17.png" data-fancybox="gallery" data-caption="ui ux Design"><img src="g_img_17.png" alt="ui ux Design" /></a>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="portfolio-item">
+                    <a href="g_img_18.png" data-fancybox="gallery" data-caption="ui ux Design"><img src="g_img_18.png" alt="ui ux Design" /></a>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="portfolio-item">
+                    <a href="g_img_19.png" data-fancybox="gallery" data-caption="ui ux Design"><img src="g_img_19.png" alt="ui ux Design" /></a>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="portfolio-item">
+                    <a href="g_img_20.png" data-fancybox="gallery" data-caption="ui ux Design"><img src="g_img_20.png" alt="ui ux Design" /></a>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="portfolio-item">
+                    <a href="g_img_21.png" data-fancybox="gallery" data-caption="ui ux Design"><img src="g_img_21.png" alt="ui ux Design" /></a>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="portfolio-item">
+                    <a href="g_img_22.png" data-fancybox="gallery" data-caption="ui ux Design"><img src="g_img_22.png" alt="ui ux Design" /></a>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="portfolio-item">
+                    <a href="g_img_23.png" data-fancybox="gallery" data-caption="ui ux Design"><img src="g_img_23.png" alt="ui ux Design" /></a>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="portfolio-item">
+                    <a href="g_img_24.png" data-fancybox="gallery" data-caption="ui ux Design"><img src="g_img_24.png" alt="ui ux Design" /></a>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="portfolio-item">
+                    <a href="g_img_25.png" data-fancybox="gallery" data-caption="ui ux Design"><img src="g_img_25.png" alt="ui ux Design" /></a>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="portfolio-item">
+                    <a href="g_img_26.png" data-fancybox="gallery" data-caption="ui ux Design"><img src="g_img_26.png" alt="ui ux Design" /></a>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="portfolio-item">
+                    <a href="g_img_27.png" data-fancybox="gallery" data-caption="ui ux Design"><img src="g_img_27.png" alt="ui ux Design" /></a>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="portfolio-item">
+                    <a href="g_img_28.png" data-fancybox="gallery" data-caption="ui ux Design"><img src="g_img_28.png" alt="ui ux Design" /></a>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="portfolio-item">
+                    <a href="g_img_29.png" data-fancybox="gallery" data-caption="ui ux Design"><img src="g_img_29.png" alt="ui ux Design" /></a>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="portfolio-item">
+                    <a href="g_img_30.png" data-fancybox="gallery" data-caption="ui ux Design"><img src="g_img_30.png" alt="ui ux Design" /></a>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="portfolio-item">
+                    <a href="g_img_31.png" data-fancybox="gallery" data-caption="ui ux Design"><img src="g_img_31.png" alt="ui ux Design" /></a>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="portfolio-item">
+                    <a href="g_img_32.png" data-fancybox="gallery" data-caption="ui ux Design"><img src="g_img_32.png" alt="ui ux Design" /></a>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="portfolio-item">
+                    <a href="g_img_33.png" data-fancybox="gallery" data-caption="ui ux Design"><img src="g_img_33.png" alt="ui ux Design" /></a>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="portfolio-item">
+                    <a href="g_img_34.png" data-fancybox="gallery" data-caption="ui ux Design"><img src="g_img_34.png" alt="ui ux Design" /></a>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="portfolio-item">
+                    <a href="g_img_35.png" data-fancybox="gallery" data-caption="ui ux Design"><img src="g_img_35.png" alt="ui ux Design" /></a>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <div class="row g-4 d-none">
+            <div class="col-md-4">
                 <div class="portfolio-item">
                     <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?w=800&h=600&fit=crop"
                         alt="Chatalott">
+
                     <div class="portfolio-overlay">
                         <div class="portfolio-content">
                             <h4 style="position: relative;">Chatalott
@@ -1684,7 +1548,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-4" data-aos="zoom-in" data-aos-delay="100">
+            <div class="col-md-4">
                 <div class="portfolio-item">
                     <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&h=600&fit=crop"
                         alt="BBOYO Real Estate">
@@ -1704,7 +1568,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
+            <div class="col-md-4">
                 <div class="portfolio-item">
                     <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop"
                         alt="Web Design">
@@ -1727,14 +1591,105 @@
         </div>
     </section>
 
+    <section id="training" class="container py-5" style="margin: 120px auto;">
+        <div class="section-title">
+            <span>05 / THE ACADEMY</span>
+            <h2>UI/UX Training Center</h2><p>Learn the craft. Build your portfolio. Take the next step in your design career.</p>
+        </div>
+        <div class="training-panel">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-7">
+                    <div class="training-label">3 Months. Job Ready Course</div>
+                    <h3 class="training-heading">Join Our Full<br><span>UI/UX Design Course</span></h3>
+                    <p class="fs-5 text-white">Become a UI/UX Designer in just 90 days!</p>
+                    <p>Learn from industry experts with <strong class="text-white">6+ years of experience.</strong></p>
+                    <ul class="training-features">
+                            <li><i class="fab fa-figma" aria-hidden="true"></i>Figma Mastery</li>
+                            <li><i class="fas fa-pen-ruler" aria-hidden="true"></i>Hands-On UI/UX</li>
+                            <li><i class="fas fa-briefcase" aria-hidden="true"></i>Internship</li>
+                            <li><i class="fas fa-laptop-code" aria-hidden="true"></i>Real Client Projects</li>
+                            <li><i class="fas fa-layer-group" aria-hidden="true"></i>Portfolio Building</li>
+                            <li><i class="fas fa-certificate" aria-hidden="true"></i>Internship Certificate</li>
+                    </ul>
+                    <button type="button" class="btn btn-custom" data-bs-toggle="modal" data-bs-target="#trainingModal">Apply Now <i class="fas fa-arrow-right ms-2" aria-hidden="true"></i></button>
+                    <p class="small mt-3 mb-0">Limited Seats <span class="mx-2" aria-hidden="true">&bull;</span> Beginners Welcome</p>
+                </div>
+                <div class="col-lg-5">
+                    <div class="training-summary">
+                        <div class="training-label mb-3"><i class="fas fa-graduation-cap me-2" aria-hidden="true"></i>Your UI/UX Journey</div>
+                        <h4>No Design Experience? No Problem.</h4>
+                        <p class="mb-4">From Absolute Beginner to Job Ready!</p>
+                        <div class="training-stats">
+                            <div class="training-stat"><strong>3</strong><span>Months Live Training</span></div>
+                            <div class="training-stat"><strong>90</strong><span>Days of Learning</span></div>
+                            <div class="training-stat"><strong>3</strong><span>Real Client Projects</span></div>
+                            <div class="training-stat"><strong>1</strong><span>Internship Certificate</span></div>
+                        </div>
+                        <div class="mt-4 pt-3 border-top border-secondary">
+                            <h5>Got a Question?</h5>
+                            <p class="small mb-1">Chat with us on WhatsApp!</p>                            
+                            <a class="training-whatsapp" href="https://wa.me/917983744423" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp" aria-hidden="true"></i>+91 79837 44423</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="modal fade" id="trainingModal" tabindex="-1" aria-labelledby="trainingModalTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header px-4 py-3">
+                    <h5 class="modal-title" id="trainingModalTitle">Apply for UI/UX Training</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-4">
+                    <p class="small">Start your 90-day design journey. Share your details and we will contact you about the course.</p>
+                    <form action="https://formsubmit.co/vikas.vikaskumar.kumar19@gmail.com" method="POST">
+                        <input type="hidden" name="_subject" value="New UI/UX Training Course Application">
+                        <input type="hidden" name="_template" value="table">
+                        <input type="hidden" name="course" value="UI/UX Design - 3 Months / 90 Days">
+                        <div class="mb-3">
+                            <label class="form-label" for="trainingName">Full Name *</label>
+                            <input class="form-control" id="trainingName" name="name" autocomplete="name" required maxlength="100" placeholder="Your full name">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label" for="trainingEmail">Email Address *</label>
+                            <input class="form-control" type="email" id="trainingEmail" name="email" autocomplete="email" required maxlength="254" placeholder="you@example.com">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label" for="trainingPhone">Phone / WhatsApp Number *</label>
+                            <input class="form-control" type="tel" id="trainingPhone" name="phone" autocomplete="tel" required pattern="\+?[0-9][0-9 \-]{8,17}[0-9]" maxlength="20" title="Enter a phone number using 10 to 20 characters: digits, spaces, an optional leading + or hyphens." placeholder="+91 98765 43210">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label" for="trainingExperience">Design Experience *</label>
+                            <select class="form-control" id="trainingExperience" name="experience" required>
+                                <option value="" disabled selected>Select your experience</option>
+                                <option>Absolute Beginner</option>
+                                <option>Some Basic Knowledge</option>
+                                <option>Working Designer / Upskilling</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label" for="trainingMessage">Questions or Learning Goals (Optional)</label>
+                            <textarea class="form-control" id="trainingMessage" name="message" rows="3" maxlength="2000" placeholder="Tell us what you would like to learn"></textarea>
+                        </div>
+                        <p class="small">By submitting, you agree to be contacted about this course. Your details will be sent securely through FormSubmit.</p>
+                        <button type="submit" class="btn btn-custom">Submit Application <i class="fas fa-arrow-right ms-2" aria-hidden="true"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <section id="contact" class="py-5" style="position: relative; margin: 120px 0;">
         <div class="container">
-            <div class="section-title" data-aos="fade-up">
-                <span>Contact</span>
-                <h2>Get in Touch</h2>
+            <div class="section-title">
+                <span>06 / LET'S CONNECT</span>
+                <h2>Get in Touch</h2><p>Have a project in mind or a question about the course? Let's talk.</p>
             </div>
             <div class="row g-4 mb-5">
-                <div class="col-md-3" data-aos="fade-up">
+                <div class="col-md-3">
                     <div class="glass-card text-center"
                         style="padding: 40px 20px; position: relative; overflow: hidden;">
                         <div
@@ -1755,7 +1710,7 @@
                             onmouseout="this.style.color='#9ca3af';">+91 7983744423</a>
                     </div>
                 </div>
-                <div class="col-md-3" data-aos="fade-up" data-aos-delay="100">
+                <div class="col-md-3">
                     <div class="glass-card text-center"
                         style="padding: 40px 20px; position: relative; overflow: hidden;">
                         <div
@@ -1776,7 +1731,7 @@
                             onmouseout="this.style.color='#9ca3af';">vikas.vikaskumar.kumar19@gmail.com</a>
                     </div>
                 </div>
-                <div class="col-md-3" data-aos="fade-up" data-aos-delay="200">
+                <div class="col-md-3">
                     <div class="glass-card text-center"
                         style="padding: 40px 20px; position: relative; overflow: hidden;">
                         <div
@@ -1797,7 +1752,7 @@
                             onmouseout="this.style.color='#9ca3af';">linkedin.com/in/imvikaskt</a>
                     </div>
                 </div>
-                <div class="col-md-3" data-aos="fade-up" data-aos-delay="200">
+                <div class="col-md-3">
                     <div class="glass-card text-center"
                         style="padding: 40px 20px; position: relative; overflow: hidden;">
                         <div
@@ -1823,280 +1778,73 @@
         </div>
     </section>
 
-    <footer
-        style="background: linear-gradient(180deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.95) 100%); border-top: 1px solid rgba(255, 189, 57, 0.1); position: relative; overflow: hidden;">
-        <div
-            style="position: absolute; top: 0; left: 0; width: 100%; height: 2px; background: linear-gradient(90deg, transparent, var(--primary-gold), transparent);">
-        </div>
-        <div class="container py-5">
+    </main>
+    <footer class="corporate-footer">
+        <div class="container">
             <div class="row g-4">
-                <div class="col-lg-4 col-md-6">
-                    <h3 style="color: #fff; font-size: 32px; font-weight: 800; margin-bottom: 20px;">Vikas<span
-                            style="color: var(--primary-gold);">.</span></h3>
-                    <p style="color: #9ca3af; line-height: 1.8; margin-bottom: 25px;">Sr. Front-End Developer & Sr. UI/UX
-                        Designer passionate about creating beautiful and functional web experiences.</p>
+                <div class="col-lg-3">
+                    <a class="brand-lockup footer-brand" href="#home"><img src="logo.png" alt="UI UX Design"></a>
+                    <p class="mt-3">Thoughtful digital experiences.<br>Practical design education. Lasting possibilities.</p>
                 </div>
-                <div class="col-lg-2 col-md-6">
-                    <h5
-                        style="color: #fff; font-size: 18px; font-weight: 700; margin-bottom: 25px; position: relative; padding-bottom: 10px;">
-                        Quick Links
-                        <span
-                            style="position: absolute; bottom: 0; left: 0; width: 40px; height: 2px; background: var(--primary-gold);"></span>
-                    </h5>
-                    <ul style="list-style: none; padding: 0; margin: 0;">
-                        <li style="margin-bottom: 12px;"><a href="#home"
-                                style="color: #9ca3af; font-size: 15px; transition: 0.3s;"
-                                onmouseover="this.style.color='var(--primary-gold)'; this.style.paddingLeft='5px';"
-                                onmouseout="this.style.color='#9ca3af'; this.style.paddingLeft='0';"><i
-                                    class="fas fa-chevron-right"
-                                    style="font-size: 10px; margin-right: 8px;"></i>Home</a></li>
-                        <li style="margin-bottom: 12px;"><a href="#about"
-                                style="color: #9ca3af; font-size: 15px; transition: 0.3s;"
-                                onmouseover="this.style.color='var(--primary-gold)'; this.style.paddingLeft='5px';"
-                                onmouseout="this.style.color='#9ca3af'; this.style.paddingLeft='0';"><i
-                                    class="fas fa-chevron-right"
-                                    style="font-size: 10px; margin-right: 8px;"></i>About</a></li>
-                        <li style="margin-bottom: 12px;"><a href="#services"
-                                style="color: #9ca3af; font-size: 15px; transition: 0.3s;"
-                                onmouseover="this.style.color='var(--primary-gold)'; this.style.paddingLeft='5px';"
-                                onmouseout="this.style.color='#9ca3af'; this.style.paddingLeft='0';"><i
-                                    class="fas fa-chevron-right"
-                                    style="font-size: 10px; margin-right: 8px;"></i>Services</a></li>
-                        <li style="margin-bottom: 12px;"><a href="#portfolio"
-                                style="color: #9ca3af; font-size: 15px; transition: 0.3s;"
-                                onmouseover="this.style.color='var(--primary-gold)'; this.style.paddingLeft='5px';"
-                                onmouseout="this.style.color='#9ca3af'; this.style.paddingLeft='0';"><i
-                                    class="fas fa-chevron-right"
-                                    style="font-size: 10px; margin-right: 8px;"></i>Portfolio</a></li>
-                        <li style="margin-bottom: 12px;"><a href="#contact"
-                                style="color: #9ca3af; font-size: 15px; transition: 0.3s;"
-                                onmouseover="this.style.color='var(--primary-gold)'; this.style.paddingLeft='5px';"
-                                onmouseout="this.style.color='#9ca3af'; this.style.paddingLeft='0';"><i
-                                    class="fas fa-chevron-right"
-                                    style="font-size: 10px; margin-right: 8px;"></i>Contact</a></li>
-                    </ul>
+
+                <div class="col-6 col-lg-3">
+                    <h3>Services</h3>
+                    <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#trainingModal">Figma Design</a>
+                    <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#trainingModal">UI/UX Design</a>
+                    <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#trainingModal">Responsive Design</a>
+                    <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#trainingModal">Mobile Application Design</a>
+                    <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#trainingModal">Web Design</a>
+                    <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#trainingModal">Web Development</a>
                 </div>
-                <div class="col-lg-3 col-md-6">
-                    <h5
-                        style="color: #fff; font-size: 18px; font-weight: 700; margin-bottom: 25px; position: relative; padding-bottom: 10px;">
-                        Services
-                        <span
-                            style="position: absolute; bottom: 0; left: 0; width: 40px; height: 2px; background: var(--primary-gold);"></span>
-                    </h5>
-                    <ul style="list-style: none; padding: 0; margin: 0;">
-                        <li style="margin-bottom: 12px;"><a href="#"
-                                style="color: #9ca3af; font-size: 15px; transition: 0.3s;"
-                                onmouseover="this.style.color='var(--primary-gold)'; this.style.paddingLeft='5px';"
-                                onmouseout="this.style.color='#9ca3af'; this.style.paddingLeft='0';"><i
-                                    class="fas fa-chevron-right" style="font-size: 10px; margin-right: 8px;"></i>Web
-                                Development</a></li>
-                        <li style="margin-bottom: 12px;"><a href="#"
-                                style="color: #9ca3af; font-size: 15px; transition: 0.3s;"
-                                onmouseover="this.style.color='var(--primary-gold)'; this.style.paddingLeft='5px';"
-                                onmouseout="this.style.color='#9ca3af'; this.style.paddingLeft='0';"><i
-                                    class="fas fa-chevron-right" style="font-size: 10px; margin-right: 8px;"></i>UI/UX
-                                Design</a></li>
-                        <li style="margin-bottom: 12px;"><a href="#"
-                                style="color: #9ca3af; font-size: 15px; transition: 0.3s;"
-                                onmouseover="this.style.color='var(--primary-gold)'; this.style.paddingLeft='5px';"
-                                onmouseout="this.style.color='#9ca3af'; this.style.paddingLeft='0';"><i
-                                    class="fas fa-chevron-right"
-                                    style="font-size: 10px; margin-right: 8px;"></i>Responsive Design</a></li>
-                        <li style="margin-bottom: 12px;"><a href="#"
-                                style="color: #9ca3af; font-size: 15px; transition: 0.3s;"
-                                onmouseover="this.style.color='var(--primary-gold)'; this.style.paddingLeft='5px';"
-                                onmouseout="this.style.color='#9ca3af'; this.style.paddingLeft='0';"><i
-                                    class="fas fa-chevron-right" style="font-size: 10px; margin-right: 8px;"></i>React
-                                Development</a></li>
-                        <li style="margin-bottom: 12px;"><a href="#"
-                                style="color: #9ca3af; font-size: 15px; transition: 0.3s;"
-                                onmouseover="this.style.color='var(--primary-gold)'; this.style.paddingLeft='5px';"
-                                onmouseout="this.style.color='#9ca3af'; this.style.paddingLeft='0';"><i
-                                    class="fas fa-chevron-right" style="font-size: 10px; margin-right: 8px;"></i>Figma
-                                Design</a></li>
-                    </ul>
+
+
+                <div class="col-6 col-lg-3">
+                    <h3>Explore</h3>
+                    <a href="#about">About Us</a>
+                    <a href="#services">Design Services</a>
+                    <a href="#portfolio">Selected Work</a>
+                    <a href="#training">UI/UX Academy</a>
                 </div>
-                <div class="col-lg-3 col-md-6">
-                    <h5
-                        style="color: #fff; font-size: 18px; font-weight: 700; margin-bottom: 25px; position: relative; padding-bottom: 10px;">
-                        Contact Info
-                        <span
-                            style="position: absolute; bottom: 0; left: 0; width: 40px; height: 2px; background: var(--primary-gold);"></span>
-                    </h5>
-                    <ul style="list-style: none; padding: 0; margin: 0;">
-                        <li style="margin-bottom: 15px; display: flex; align-items: start; gap: 12px;">
-                            <i class="fas fa-map-marker-alt"
-                                style="color: var(--primary-gold); font-size: 16px; margin-top: 3px;"></i>
-                            <span style="color: #9ca3af; font-size: 15px; line-height: 1.6;">Berhampur, Ghaziabad, India</span>
-                        </li>
-                        <li style="margin-bottom: 15px; display: flex; align-items: start; gap: 12px;">
-                            <i class="fas fa-phone"
-                                style="color: var(--primary-gold); font-size: 16px; margin-top: 3px;"></i>
-                            <a href="tel:+917983744423"
-                                style="color: #9ca3af; font-size: 15px; line-height: 1.6; transition: 0.3s;"
-                                onmouseover="this.style.color='var(--primary-gold)';"
-                                onmouseout="this.style.color='#9ca3af';">+91 7983744423</a>
-                        </li>
-                        <li style="margin-bottom: 15px; display: flex; align-items: start; gap: 12px;">
-                            <i class="fas fa-envelope"
-                                style="color: var(--primary-gold); font-size: 16px; margin-top: 3px;"></i>
-                            <a href="mailto:vikas.vikaskumar.kumar19@gmail.com"
-                                style="color: #9ca3af; font-size: 15px; line-height: 1.6; word-break: break-word; transition: 0.3s;"
-                                onmouseover="this.style.color='var(--primary-gold)';"
-                                onmouseout="this.style.color='#9ca3af';">vikas.vikaskumar.kumar19@gmail.com</a>
-                        </li>
-                        <li style="margin-bottom: 15px; display: flex; align-items: start; gap: 12px;">
-                            <i class="fab fa-linkedin-in"
-                                style="color: var(--primary-gold); font-size: 16px; margin-top: 3px;"></i>
-                            <a href="https://linkedin.com/in/imvikaskt" target="_blank" rel="noopener noreferrer"
-                                style="color: #9ca3af; font-size: 15px; line-height: 1.6; transition: 0.3s;"
-                                onmouseover="this.style.color='var(--primary-gold)';"
-                                onmouseout="this.style.color='#9ca3af';">linkedin.com/in/imvikaskt</a>
-                        </li>
-                    </ul>
-                </div>
+                <div class="col-6 col-lg-3">
+                    <h3>Visit &amp; Connect</h3>
+                    <p>Berhampur, Ghaziabad, India</p><a href="tel:+917983744423">+91 79837 44423</a><a class="footer-email" href="mailto:vikas.vikaskumar.kumar19@gmail.com">vikas.vikaskumar.kumar19@gmail.com</a><a href="https://wa.me/917983744423" target="_blank" rel="noopener noreferrer">Chat on WhatsApp <i class="fas fa-arrow-right ms-1" aria-hidden="true"></i></a></div>
             </div>
-        </div>
-        <div style="border-top: 1px solid rgba(255, 255, 255, 0.05); padding: 25px 0; background: rgba(0,0,0,0.5);">
-            <div class="container">
-                <p style="margin: 0; color: #9ca3af; font-size: 15px; text-align: center;">&copy; 2026 <span
-                        style="color: var(--primary-gold); font-weight: 600;">Vikas Kumar</span>. All Rights Reserved.
-                    | Designed with <i class="fas fa-heart" style="color: var(--primary-gold);"></i> by Vikas</p>
-            </div>
+            <div class="footer-bottom"><span>&copy; 2026 Vikas Design Studio &amp; Academy. All rights reserved.</span><span>Designed with purpose.</span></div>
         </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
 
-    <script>
-        AOS.init({ duration: 1000, once: true });
-
-        var typed = new Typed('.typed-text', {
-            strings: ['Front-End Developer.', 'UI/UX Designer.', 'Web Designer.'],
-            typeSpeed: 50, backSpeed: 30, loop: true
-        });
-
-        // Background Particles
-        const canvas = document.getElementById("particles-canvas");
-        const ctx = canvas.getContext("2d");
-        canvas.width = window.innerWidth; canvas.height = window.innerHeight;
-        let particlesArray = [];
-
-        class Particle {
-            constructor() {
-                this.x = Math.random() * canvas.width;
-                this.y = Math.random() * canvas.height;
-                this.size = Math.random() * 2;
-                this.speedX = (Math.random() * 1) - 0.5;
-                this.speedY = (Math.random() * 1) - 0.5;
-            }
-            update() {
-                this.x += this.speedX; this.y += this.speedY;
-                if (this.x > canvas.width || this.x < 0) this.speedX = -this.speedX;
-                if (this.y > canvas.height || this.y < 0) this.speedY = -this.speedY;
-            }
-            draw() {
-                ctx.fillStyle = "rgba(255, 189, 57, 0.5)";
-                ctx.beginPath(); ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2); ctx.fill();
-            }
-        }
-        function init() { for (let i = 0; i < 80; i++) particlesArray.push(new Particle()); }
-        function animate() {
-            ctx.clearRect(0, 0, canvas.width, canvas.height);
-            for (let i = 0; i < particlesArray.length; i++) {
-                particlesArray[i].update(); particlesArray[i].draw();
-                for (let j = i; j < particlesArray.length; j++) {
-                    const dx = particlesArray[i].x - particlesArray[j].x;
-                    const dy = particlesArray[i].y - particlesArray[j].y;
-                    const dist = Math.sqrt(dx * dx + dy * dy);
-                    if (dist < 100) {
-                        ctx.strokeStyle = `rgba(255, 189, 57, ${0.1 - dist / 1000})`;
-                        ctx.beginPath(); ctx.moveTo(particlesArray[i].x, particlesArray[i].y);
-                        ctx.lineTo(particlesArray[j].x, particlesArray[j].y); ctx.stroke();
-                    }
-                }
-            }
-            requestAnimationFrame(animate);
-        }
-        init(); animate();
-        window.addEventListener('resize', () => { canvas.width = window.innerWidth; canvas.height = window.innerHeight; });
-
-        // Custom Cursor
-        const cursor = document.querySelector('.cursor');
-        const cursorFollower = document.querySelector('.cursor-follower');
-
-        document.addEventListener('mousemove', (e) => {
-            cursor.style.left = e.clientX + 'px';
-            cursor.style.top = e.clientY + 'px';
-
-            setTimeout(() => {
-                cursorFollower.style.left = e.clientX + 'px';
-                cursorFollower.style.top = e.clientY + 'px';
-            }, 100);
-        });
-
-        // Cursor hover effect on clickable elements
-        const hoverElements = document.querySelectorAll('a, button, .btn, .glass-card, .portfolio-item, input, textarea');
-        hoverElements.forEach(el => {
-            el.addEventListener('mouseenter', () => {
-                cursor.classList.add('hover');
-                cursorFollower.classList.add('hover');
-            });
-            el.addEventListener('mouseleave', () => {
-                cursor.classList.remove('hover');
-                cursorFollower.classList.remove('hover');
-            });
-        });
-
-        // Smooth Scroll on Menu Click and All Links
-        document.querySelectorAll('a[href^="#"]').forEach(link => {
-            link.addEventListener('click', function (e) {
-                const targetId = this.getAttribute('href');
-                if (targetId && targetId !== '#') {
-                    e.preventDefault();
-                    const targetSection = document.querySelector(targetId);
-                    if (targetSection) {
-                        const navbarHeight = document.querySelector('.navbar').offsetHeight;
-                        const targetPosition = targetSection.offsetTop - navbarHeight - 20;
-                        window.scrollTo({
-                            top: targetPosition,
-                            behavior: 'smooth'
-                        });
-                    }
-                }
-            });
-        });
-
-        // Scroll Spy - Active Menu on Scroll
-        const sections = document.querySelectorAll('section[id]');
-        const navLinks = document.querySelectorAll('.nav-link');
-
-        window.addEventListener('scroll', () => {
-            let current = '';
-            sections.forEach(section => {
-                const sectionTop = section.offsetTop;
-                const sectionHeight = section.clientHeight;
-                if (window.pageYOffset >= sectionTop - 200) {
-                    current = section.getAttribute('id');
-                }
-            });
-
-            navLinks.forEach(link => {
-                link.classList.remove('active');
-                if (link.getAttribute('href') === '#' + current) {
-                    link.classList.add('active');
-                }
-            });
-        });
-
-
-    </script>
-	
-	<amp-auto-ads type="adsense"
+    <script src="corporate.js"></script>
+    
+    <amp-auto-ads type="adsense"
         data-ad-client="ca-pub-6926392316665978">
 </amp-auto-ads>
+
+
+
+
+<!-- jQuery 3.7.1 -->
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+<!-- Fancybox 3.5.7 -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+
+<script>
+$(document).ready(function () {
+
+    $('[data-fancybox="gallery"]').fancybox({
+        buttons: [
+            "zoom",
+            "slideShow",
+            "fullScreen",
+            "close"
+        ]
+    });
+
+});
+</script>
 
 
 </body>
