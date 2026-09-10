@@ -34,13 +34,13 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
 .course-symbol { display:flex; align-items:center; gap:22px; padding:25px 0; border-bottom:1px solid #ffffff14; margin-bottom:23px; }
 .course-symbol i { font-size:64px; color:#ffbd39; }
 .course-symbol span { color:#8b8372; font-size:13px; line-height:1.5; letter-spacing:4px; font-weight:600; }
-.hero-course h2 { font-size:27px; font-weight:500; letter-spacing:-.8px; line-height:1.3; }
-.hero-course>p { font-size:12px; margin:15px 0; }
+.hero-course h2 { font-size:28px; font-weight:500; letter-spacing:-.8px; line-height:1.3; }
+.hero-course>p { font-size:14px; margin:15px 0; }
 .course-facts { display:grid; grid-template-columns:repeat(3,1fr); margin:24px 0; }
 .course-facts>div+div { border-left:1px solid #ffffff15; padding-left:20px; }
 .course-facts strong { display:block; font-size:25px; color:#fff; font-weight:500; line-height:1.3; }
-.course-facts span { font-size:9px; color:#acabb0; }
-.hero-course .course-note { margin-bottom:0; font-size:9px; text-align:center; }
+.course-facts span { font-size:14px; color:#acabb0; }
+.hero-course .course-note { margin-bottom:0; font-size:14px; text-align:center; }
 .expertise-strip { display:flex; align-items:center; justify-content:space-between; gap:20px; margin-top:65px; padding:27px 0; border-top:1px solid #27272c; border-bottom:1px solid #27272c; }
 .expertise-strip>span { font-size:9px; letter-spacing:1.8px; max-width:110px; color:#86868f; }
 .expertise-strip>div { color:#d7d7dc; font-size:14px; }
@@ -148,7 +148,7 @@ main>section#contact { padding-bottom:85px!important; }
     .eyebrow { font-size:8px; letter-spacing:1.5px; }
     .hero-description { font-size:13px; }
     .hero-actions .btn { width:100%; }
-    .hero-proof { gap:12px; font-size:9px; }
+    .hero-proof { gap:12px; font-size:14px; }
     .hero-course { padding:24px; }
     .expertise-strip>div { font-size:12px; }
     .section-title h2, #training .section-title h2 { font-size:27px; }
@@ -196,7 +196,7 @@ main>section#contact { padding-bottom:85px!important; }
 .hero-course::before { content:""; position:absolute; top:0; left:15%; width:60%; height:1px; background:linear-gradient(90deg,transparent,#ffe4a5,transparent); box-shadow:0 0 20px #ffc85c; animation:edge-light 4s ease-in-out infinite alternate; }
 .academy-orbit { position:absolute; inset:-20px -25px; border:1px solid #ffbd391a; border-radius:50%; transform:rotate(-20deg); pointer-events:none; }
 .academy-orbit::after { content:""; position:absolute; top:10%; left:15%; width:8px; height:8px; background:#ffcd68; border-radius:50%; box-shadow:0 0 25px 6px #ffbd3940; animation:beacon 3s infinite; }
-.floating-note { position:absolute; z-index:3; background:#171719ee; border:1px solid #665031; border-radius:9px; padding:11px 15px; color:#e4d5b7; box-shadow:0 10px 35px #0006; font-size:10px; letter-spacing:.4px; pointer-events:none; animation:note-float 5s ease-in-out infinite; }
+.floating-note { position:absolute; z-index:3; background:#171719ee; border:1px solid #665031; border-radius:9px; padding:11px 15px; color:#e4d5b7; box-shadow:0 10px 35px #0006; font-size:14px; letter-spacing:.4px; pointer-events:none; animation:note-float 5s ease-in-out infinite; }
 .floating-note i { color:#ffbd39; font-size:15px; margin-right:9px; }
 .note-figma { right:-7px; top:-3px; }
 .note-spark { left:-24px; bottom:0; animation-delay:-2.5s; }
