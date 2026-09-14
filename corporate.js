@@ -76,19 +76,7 @@ applicationModal.addEventListener('show.bs.modal', () => {
         bootstrap.Collapse.getOrCreateInstance(navigation).hide();
     }
 });
-const navLinks = document.querySelectorAll('.nav-link');
-const observer = new IntersectionObserver(entries => {
-    for (const entry of entries) {
-        if (!entry.isIntersecting) continue;
-        navLinks.forEach(link => {
-            const current = link.getAttribute('href') === '#' + entry.target.id;
-            link.classList.toggle('active', current);
-            if (current) link.setAttribute('aria-current', 'location');
-            else link.removeAttribute('aria-current');
-        });
-    }
-}, { rootMargin: '-15% 0px -55% 0px', threshold: 0 });
-document.querySelectorAll('main > section[id]').forEach(section => observer.observe(section));
+// Navigation state is synchronized by site-additions.js.
 
 /* Flip cards: hover, touch and keyboard share one accessible state. */
 document.querySelectorAll('.service-flip').forEach(card => {

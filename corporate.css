@@ -45,7 +45,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
 .expertise-strip>span { font-size:9px; letter-spacing:1.8px; max-width:110px; color:#86868f; }
 .expertise-strip>div { color:#d7d7dc; font-size:14px; }
 .expertise-strip i { margin-right:10px; color:#a4a4af; font-size:20px; }
-main>section:not(#home) { margin:0 auto!important; padding-top:95px!important; padding-bottom:0!important; }
+main>section:not(#home) { margin:0 auto!important; padding-top:95px!important;  }
 main>section#contact { padding-bottom:85px!important; }
 .section-title { text-align:left; margin-bottom:35px; }
 .section-title>span { position:static; transform:none; display:block; width:auto; font-size:10px; color:#ffbd39; font-weight:600; letter-spacing:2px; margin-bottom:15px; }
@@ -111,7 +111,7 @@ main>section#contact { padding-bottom:85px!important; }
 #contact .row { margin-bottom:0!important; }
 .corporate-footer { padding:50px 0 0; border-top:1px solid #28282d; background:#0d0d10; }
 .corporate-footer h3 { font-size:18px; font-weight:500; margin:3px 0 20px; }
-.corporate-footer a:not(.brand-lockup) { display:block; color:#aeb0b8; font-size:14px; margin-bottom:9px; }
+.corporate-footer a:not(.brand-lockup) { display:block; color:#aeb0b8; font-size:14px; margin-bottom:9px; text-decoration: none;}
 .corporate-footer a:hover { color:#ffbd39; }
 .corporate-footer p { font-size:14px; }
 .footer-email { overflow-wrap:anywhere; }
