@@ -115,7 +115,7 @@ main>section#contact { padding-bottom:85px!important; }
 .corporate-footer a:hover { color:#ffbd39; }
 .corporate-footer p { font-size:14px; }
 .footer-email { overflow-wrap:anywhere; }
-.footer-bottom { display:flex; justify-content:space-between; gap:15px; border-top:1px solid #26262b; padding:23px 0; margin-top:35px; font-size:10px; color:#92929d; }
+.footer-bottom { display:flex; justify-content:space-between; gap:15px; border-top:1px solid #26262b; padding:23px 0; margin-top:35px; font-size:14px; color:#92929d; }
 #trainingModal .form-control { padding:11px 13px; font-size:13px; }
 #trainingModal .form-label { font-size:12px; }
 #trainingModal .modal-title { font-size:19px; font-weight:500; }
