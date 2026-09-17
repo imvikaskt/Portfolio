@@ -86,13 +86,13 @@
 [hidden] { display:none!important; }
 .contact-info-panel { background:radial-gradient(ellipse at top right,#ffbd391b,transparent 75%),#111113; }
 .contact-info-panel h3 { font-size:28px; font-weight:500; line-height:1.4; margin:20px 0; }
-.contact-info-panel>p { font-size:14px; line-height:1.9; }
+.contact-info-panel>p { font-size:16px; line-height:1.6; }
 .contact-info-panel>a:not(.guide-promo) { display:flex; gap:17px; align-items:center; padding:20px 0; border-bottom:1px solid #3a3225; color:#e9e4da; }
 .contact-info-panel>a>i { color:#ffbd39; font-size:20px; }
 .contact-info-panel>a span { font-size:14px; min-width:0; }
 .contact-info-panel>a small { display:block; font-size:14px; margin-top:5px; color:#aeabb0; overflow-wrap:anywhere; }
 .contact-location { margin:24px 0; }
-.guide-promo { display:block; color:#ffcc70; font-size:14px; line-height:1.8; }
+.guide-promo { display:block; color:#ffcc70; font-size:16px; line-height:1.8; }
 #portfolio .portfolio-item>a>img { width:100%; display:block; height:210px; object-fit:cover; }
 #trainingModal form .whatsapp-ready { color:#b3e8a8; }
 /* The supplied guide keeps its article structure, using the site's gold theme. */
