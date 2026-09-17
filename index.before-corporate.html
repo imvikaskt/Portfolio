@@ -6,23 +6,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="google-adsense-account" content="ca-pub-6926392316665978">
     <title>Vikas Kumar - Front-End Developer</title>
-    
-    
-    <link rel="icon" type="image/x-icon" href="favicon.png"/>
+
+
+    <link rel="icon" type="image/x-icon" href="favicon.png" />
 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    
- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6926392316665978"
-     crossorigin="anonymous"></script>
 
- <script async custom-element="amp-auto-ads"
-        src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js">
+
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6926392316665978"
+        crossorigin="anonymous"></script>
+
+    <script async custom-element="amp-auto-ads" src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js">
+    </script>
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "UI/UX Designer Course",
+  "image": "https://imvikaskt.com/logo.png",
+  "@id": "https://imvikaskt.com/",
+  "url": "https://imvikaskt.com/",
+  "telephone": "7983744423",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Noida",
+    "addressLocality": "Noida",
+    "postalCode": "201301",
+    "addressCountry": "IN"
+  },
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday"
+    ],
+    "opens": "10:00",
+    "closes": "17:00"
+  },
+  "sameAs": [
+    "https://www.facebook.com/imvikaskt/",
+    "https://www.instagram.com/imvikaskt/",
+    "https://www.youtube.com/@imvikaskt",
+    "https://www.linkedin.com/in/imvikaskt/",
+    "https://imvikaskt.com/"
+  ] 
+}
 </script>
-    
-    
+
+
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <style>
@@ -1100,31 +1137,145 @@
         }
 
         /* UI/UX training */
-        .training-panel { padding: clamp(24px, 5vw, 64px); border: 1px solid rgba(255,189,57,.35); border-radius: 24px; background: radial-gradient(ellipse at top right, rgba(255,189,57,.14), transparent 65%), #101013; }
-        .training-label { color: var(--primary-gold); font-size: 13px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; }
-        .training-heading { font-size: clamp(32px, 4.5vw, 56px); line-height: 1.15; margin: 20px 0; }
-        .training-heading span { color: var(--primary-gold); }
-        .training-features { list-style: none; padding: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; margin: 28px 0; }
-        .training-features li { display: flex; gap: 12px; align-items: center; color: #eee; font-size: 14px; }
-        .training-features i { color: var(--primary-gold); width: 24px; flex-shrink: 0; font-size: 20px; text-align: center; }
-        .training-summary { padding: 30px; background: rgba(255,255,255,.04); border: 1px solid var(--glass-border); border-radius: 20px; }
-        .training-stats { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 12px; }
-        .training-stat { padding: 18px 10px; border: 1px solid var(--glass-border); border-radius: 12px; text-align: center; }
-        .training-stat strong { display: block; color: var(--primary-gold); font-size: 30px; }
-        .training-stat span { font-size: 12px; color: #ddd; }
-        .training-whatsapp { color: #e8e8e8; display: inline-flex; align-items: center; gap: 8px; padding: 8px 0; }
-        .training-whatsapp:hover { color: var(--primary-gold); }
-        #trainingModal .modal-content { background: #151519; color: #d4d4dc; border: 1px solid rgba(255,189,57,.4); border-radius: 20px; }
-        #trainingModal .modal-header { border-color: var(--glass-border); }
-        #trainingModal .form-label { color: #eee; font-size: 14px; }
-        #trainingModal .form-control { margin-bottom: 0; }
-        #trainingModal select option { background: #151519; color: #fff; }
-        #trainingModal .btn-custom { width: 100%; }
+        .training-panel {
+            padding: clamp(24px, 5vw, 64px);
+            border: 1px solid rgba(255, 189, 57, .35);
+            border-radius: 24px;
+            background: radial-gradient(ellipse at top right, rgba(255, 189, 57, .14), transparent 65%), #101013;
+        }
+
+        .training-label {
+            color: var(--primary-gold);
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        .training-heading {
+            font-size: clamp(32px, 4.5vw, 56px);
+            line-height: 1.15;
+            margin: 20px 0;
+        }
+
+        .training-heading span {
+            color: var(--primary-gold);
+        }
+
+        .training-features {
+            list-style: none;
+            padding: 0;
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 18px;
+            margin: 28px 0;
+        }
+
+        .training-features li {
+            display: flex;
+            gap: 12px;
+            align-items: center;
+            color: #eee;
+            font-size: 14px;
+        }
+
+        .training-features i {
+            color: var(--primary-gold);
+            width: 24px;
+            flex-shrink: 0;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        .training-summary {
+            padding: 30px;
+            background: rgba(255, 255, 255, .04);
+            border: 1px solid var(--glass-border);
+            border-radius: 20px;
+        }
+
+        .training-stats {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 12px;
+        }
+
+        .training-stat {
+            padding: 18px 10px;
+            border: 1px solid var(--glass-border);
+            border-radius: 12px;
+            text-align: center;
+        }
+
+        .training-stat strong {
+            display: block;
+            color: var(--primary-gold);
+            font-size: 30px;
+        }
+
+        .training-stat span {
+            font-size: 12px;
+            color: #ddd;
+        }
+
+        .training-whatsapp {
+            color: #e8e8e8;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 0;
+        }
+
+        .training-whatsapp:hover {
+            color: var(--primary-gold);
+        }
+
+        #trainingModal .modal-content {
+            background: #151519;
+            color: #d4d4dc;
+            border: 1px solid rgba(255, 189, 57, .4);
+            border-radius: 20px;
+        }
+
+        #trainingModal .modal-header {
+            border-color: var(--glass-border);
+        }
+
+        #trainingModal .form-label {
+            color: #eee;
+            font-size: 14px;
+        }
+
+        #trainingModal .form-control {
+            margin-bottom: 0;
+        }
+
+        #trainingModal select option {
+            background: #151519;
+            color: #fff;
+        }
+
+        #trainingModal .btn-custom {
+            width: 100%;
+        }
+
         @media (max-width: 575px) {
-            .training-features { grid-template-columns: 1fr; }
-            .training-summary { padding: 20px; }
-            #training .section-title h2 { font-size: 28px; }
-            #training .section-title span { font-size: 60px; top: -25px; }
+            .training-features {
+                grid-template-columns: 1fr;
+            }
+
+            .training-summary {
+                padding: 20px;
+            }
+
+            #training .section-title h2 {
+                font-size: 28px;
+            }
+
+            #training .section-title span {
+                font-size: 60px;
+                top: -25px;
+            }
         }
     </style>
 </head>
@@ -1139,22 +1290,24 @@
     <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container">
             <a class="navbar-brand" href="#">
-            <img src="logo.png" title="UI/UX Designer" style="max-height: 50px;">
-            <span>.</span></a>
+                <img src="logo.png" title="UI/UX Designer" style="max-height: 50px;">
+                <span>.</span></a>
             <button class="navbar-toggler bg-secondary" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#resume">Resume</a></li>
-
-                    <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#about">About us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#portfolio">Our Work</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#training">Academy</a></li>
+                    <li class="nav-item"><a class="nav-link" href="how-to-become-ui-ux-designer-in-india.html">Learn
+                            UI/UX</a>
+                    </li>
+                    <!-- <li class="nav-item"><a class="nav-link" href="index.html#students">Students</a></li> -->
+                    <li class="nav-item"><a class="nav-link" href="index.html#contact">Get in touch</a></li>
                 </ul>
             </div>
         </div>
@@ -1248,26 +1401,41 @@
                 </div>
                 <div class="col-lg-7" data-aos="fade-left">
                     <div style="padding-left: 30px;">
-                        <h3 style="color: #fff; font-size: 36px; margin-bottom: 20px; font-weight: 800;">                            
-                            Front-End Developer 
+                        <h3 style="color: #fff; font-size: 36px; margin-bottom: 20px; font-weight: 800;">
+                            Front-End Developer
                             <span style="color: var(--primary-gold);">&</span> Sr. UI/UX Designer
                         </h3>
                         <p style="color: #d1d5db; font-size: 18px; line-height: 1.8; margin-bottom: 25px;">
-                            Hello! I'm <span style="color: var(--primary-gold); font-weight: 700;">Vikas Kumar</span>, 
-                            a passionate Front-End Developer & Sr. UI/UX Designer with <span style="color: var(--primary-gold); font-weight: 700;">14+ years</span> 
-                            of experience in creating stunning and responsive web applications, building scalable, responsive, and accessible web, mobile, and tablet applications for enterprise and consumer-facing products. Proven track record of delivering high-impact solutions for global clients including Kuwait Petroleum Corporation, KPMG, Protiviti, Boubyan Bank, and Eureka.
+                            Hello! I'm <span style="color: var(--primary-gold); font-weight: 700;">Vikas Kumar</span>,
+                            a passionate Front-End Developer & Sr. UI/UX Designer with <span
+                                style="color: var(--primary-gold); font-weight: 700;">14+ years</span>
+                            of experience in creating stunning and responsive web applications, building scalable,
+                            responsive, and accessible web, mobile, and tablet applications for enterprise and
+                            consumer-facing products. Proven track record of delivering high-impact solutions for global
+                            clients including Kuwait Petroleum Corporation, KPMG, Protiviti, Boubyan Bank, and Eureka.
                         </p>
 
                         <p style="color: #d1d5db; font-size: 16px; line-height: 1.8; margin-bottom: 30px;">
-                            Specialized in <span style="color: var(--primary-gold);">React.js, Tailwind CSS, modern JavaScript,</span> and <span style="color: var(--primary-gold);">component-driven UI architecture</span>, with a strong foundation in <span style="color: var(--primary-gold);">human-centered modern UX design</span>. Adept at translating complex business requirements and user insights into elegant, high-performance interfaces that balance <span style="color: var(--primary-gold);">visual excellence, usability, and speed.</span>
+                            Specialized in <span style="color: var(--primary-gold);">React.js, Tailwind CSS, modern
+                                JavaScript,</span> and <span style="color: var(--primary-gold);">component-driven UI
+                                architecture</span>, with a strong foundation in <span
+                                style="color: var(--primary-gold);">human-centered modern UX design</span>. Adept at
+                            translating complex business requirements and user insights into elegant, high-performance
+                            interfaces that balance <span style="color: var(--primary-gold);">visual excellence,
+                                usability, and speed.</span>
                         </p>
 
                         <p style="color: #d1d5db; font-size: 16px; line-height: 1.8; margin-bottom: 30px;">
-                            Experienced across the full UI lifecycle—from <span style="color: var(--primary-gold);">user research, personas, wireframes, and interactive prototypes</span> to <span style="color: var(--primary-gold);">production-ready front-end implementation</span> within <span style="color: var(--primary-gold);">Agile and CI/CD environments.</span> Known for strong stakeholder collaboration, clean design systems, and delivering pixel-perfect UIs that scale efficiently.
+                            Experienced across the full UI lifecycle—from <span style="color: var(--primary-gold);">user
+                                research, personas, wireframes, and interactive prototypes</span> to <span
+                                style="color: var(--primary-gold);">production-ready front-end implementation</span>
+                            within <span style="color: var(--primary-gold);">Agile and CI/CD environments.</span> Known
+                            for strong stakeholder collaboration, clean design systems, and delivering pixel-perfect UIs
+                            that scale efficiently.
                         </p>
 
 
-                            
+
                         <div class="row g-4 mb-4">
                             <div class="col-md-6">
                                 <div style="padding: 20px; background: var(--glass-bg); border: 1px solid var(--glass-border); border-radius: 15px; backdrop-filter: blur(10px); transition: 0.3s;"
@@ -1353,7 +1521,7 @@
         </div>
         <div class="row g-4">
 
-              <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
                 <div class="glass-card text-center">
                     <div class="service-icon"><i class="fas fa-pencil-ruler"></i></div>
                     <h4 style="position: relative;">UI/UX Design
@@ -1364,32 +1532,34 @@
                 </div>
             </div>
 
-              <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
                 <div class="glass-card text-center">
                     <div class="service-icon"><i class="fas fa-wand-magic-sparkles" aria-hidden="true"></i></div>
                     <h4 style="position: relative;">Learn AI Design
                         <span
                             style="position: absolute; bottom: -8px; left: 50%; transform: translateX(-50%); width: 40px; height: 2px; background: linear-gradient(90deg, var(--primary-gold), transparent);"></span>
                     </h4>
-                    <p>Learn how to use AI tools and effective prompts to create visuals, explore layouts, and refine your designs.</p>
+                    <p>Learn how to use AI tools and effective prompts to create visuals, explore layouts, and refine
+                        your designs.</p>
                 </div>
             </div>
 
-              <div class="col-md-4" data-aos="fade-up">
+            <div class="col-md-4" data-aos="fade-up">
                 <div class="glass-card text-center">
                     <div class="service-icon"><i class="fas fa-mobile-screen-button" aria-hidden="true"></i></div>
                     <h4 style="position: relative;">Mobile App Design
                         <span
                             style="position: absolute; bottom: -8px; left: 50%; transform: translateX(-50%); width: 40px; height: 2px; background: linear-gradient(90deg, var(--primary-gold), transparent);"></span>
                     </h4>
-                    <p>Designing intuitive mobile app screens and interactive prototypes for smooth Android and iOS experiences.</p>
+                    <p>Designing intuitive mobile app screens and interactive prototypes for smooth Android and iOS
+                        experiences.</p>
                 </div>
             </div>
 
 
 
 
-            <div class="col-md-4" data-aos="fade-up"> 
+            <div class="col-md-4" data-aos="fade-up">
                 <div class="glass-card text-center">
                     <div class="service-icon"><i class="fas fa-laptop-code"></i></div>
                     <h4 style="position: relative;">Front-End Developer
@@ -1399,7 +1569,7 @@
                     <p>Building responsive websites using HTML5, CSS3, JavaScript, React, and Tailwind CSS.</p>
                 </div>
             </div>
-          
+
 
 
 
@@ -1415,7 +1585,7 @@
                     <p>Creating mobile-friendly designs that work seamlessly across all devices.</p>
                 </div>
             </div>
-          
+
             <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
                 <div class="glass-card text-center">
                     <div class="service-icon"><i class="fas fa-desktop" aria-hidden="true"></i></div>
@@ -1423,10 +1593,11 @@
                         <span
                             style="position: absolute; bottom: -8px; left: 50%; transform: translateX(-50%); width: 40px; height: 2px; background: linear-gradient(90deg, var(--primary-gold), transparent);"></span>
                     </h4>
-                    <p>Crafting modern website layouts and landing pages that reflect your brand and make navigation effortless.</p>
+                    <p>Crafting modern website layouts and landing pages that reflect your brand and make navigation
+                        effortless.</p>
                 </div>
             </div>
-          
+
         </div>
     </section>
 
@@ -1436,8 +1607,8 @@
             <h2>My Expertise</h2>
         </div>
         <div class="row g-4">
-            
-             <div class="col-lg-12 col-md-12" data-aos="fade-up" data-aos-delay="100">
+
+            <div class="col-lg-12 col-md-12" data-aos="fade-up" data-aos-delay="100">
                 <div class="glass-card">
                     <!-- <h5 class="text-white mb-3" style="position: relative;"><i class="fas fa-desktop text-warning me-2"></i>Operating Systems
                         <span
@@ -1449,7 +1620,7 @@
                         <span class="skill-tag">UI UX Information Architecture</span>
                         <span class="skill-tag">Agile & Scrum Methodologies</span>
                         <span class="skill-tag">Cross-functional Collaboration</span>
-                        <span class="skill-tag">Wireframeing & Prototyping</span>                        
+                        <span class="skill-tag">Wireframeing & Prototyping</span>
                         <span class="skill-tag">Debugging/Testing</span>
                         <span class="skill-tag">XD/Photoshop/Illustrator</span>
                         <span class="skill-tag">Figma/Zeplin/Sketch</span>
@@ -1460,7 +1631,7 @@
                 </div>
             </div>
 
-            
+
             <!-- Operating Systems -->
             <div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="100">
                 <div class="glass-card">
@@ -1538,7 +1709,7 @@
                         <span class="skill-tag">Wireframes & mock ups</span>
                         <span class="skill-tag">App UI Design</span>
                         <span class="skill-tag">Prototyping using Adobe XD & Invision</span>
-                        <span class="skill-tag">Interactive ow with HTML/ CSS/JS/jQuery</span>                        
+                        <span class="skill-tag">Interactive ow with HTML/ CSS/JS/jQuery</span>
                     </div>
                 </div>
             </div>
@@ -1589,7 +1760,7 @@
         </div>
         <div class="row g-5">
             <!-- Left Side: Circular Timeline for Education -->
-             <div class="col-lg-12" data-aos="fade-left">
+            <div class="col-lg-12" data-aos="fade-left">
                 <h3 class="mb-5 text-white" style="font-size: 28px; position: relative;"><i
                         class="fas fa-briefcase text-warning me-3"></i>Experience
                     <span
@@ -1656,7 +1827,8 @@
                         <div style="background: var(--glass-bg); border-left: 4px solid var(--primary-gold); padding: 25px; border-radius: 12px; backdrop-filter: blur(10px); border: 1px solid var(--glass-border); transition: 0.3s;"
                             onmouseover="this.style.transform='translateX(5px)'; this.style.borderColor='var(--primary-gold)';"
                             onmouseout="this.style.transform='translateX(0)'; this.style.borderColor='var(--glass-border)';">
-                            <h4 style="color: #fff; margin: 0 0 12px 0; font-size: 20px;">VT Info Network Pvt. Ltd. (Dainik Bhaskar Group)</h4>
+                            <h4 style="color: #fff; margin: 0 0 12px 0; font-size: 20px;">VT Info Network Pvt. Ltd.
+                                (Dainik Bhaskar Group)</h4>
                             <p>MAR 2011 - DEC 2011, DELHi</p>
                             <p
                                 style="color: var(--primary-gold); font-weight: 600; margin-bottom: 8px; font-size: 15px;">
@@ -1669,10 +1841,10 @@
                     </div>
                 </div>
             </div>
-           
+
 
             <!-- Right Side: Layout 5 for Experience -->
-              <div class="col-lg-12 mb-5" data-aos="fade-right">
+            <div class="col-lg-12 mb-5" data-aos="fade-right">
                 <h3 class="mb-5 text-white" style="font-size: 28px; position: relative;">
                     <i class="fas fa-graduation-cap text-warning me-3"></i>Education
                     <span
@@ -1727,7 +1899,7 @@
                 </div>
             </div>
 
-            
+
         </div>
     </section>
 
@@ -1813,19 +1985,23 @@
                     <p class="fs-5 text-white">Become a UI/UX Designer in just 90 days!</p>
                     <p>Learn from industry experts with <strong class="text-white">6+ years of experience.</strong></p>
                     <ul class="training-features">
-                            <li><i class="fab fa-figma" aria-hidden="true"></i>Figma Mastery</li>
-                            <li><i class="fas fa-pen-ruler" aria-hidden="true"></i>Hands-On UI/UX</li>
-                            <li><i class="fas fa-briefcase" aria-hidden="true"></i>Internship</li>
-                            <li><i class="fas fa-laptop-code" aria-hidden="true"></i>Real Client Projects</li>
-                            <li><i class="fas fa-layer-group" aria-hidden="true"></i>Portfolio Building</li>
-                            <li><i class="fas fa-certificate" aria-hidden="true"></i>Internship Certificate</li>
+                        <li><i class="fab fa-figma" aria-hidden="true"></i>Figma Mastery</li>
+                        <li><i class="fas fa-pen-ruler" aria-hidden="true"></i>Hands-On UI/UX</li>
+                        <li><i class="fas fa-briefcase" aria-hidden="true"></i>Internship</li>
+                        <li><i class="fas fa-laptop-code" aria-hidden="true"></i>Real Client Projects</li>
+                        <li><i class="fas fa-layer-group" aria-hidden="true"></i>Portfolio Building</li>
+                        <li><i class="fas fa-certificate" aria-hidden="true"></i>Internship Certificate</li>
                     </ul>
-                    <button type="button" class="btn btn-custom" data-bs-toggle="modal" data-bs-target="#trainingModal">Apply Now <i class="fas fa-arrow-right ms-2" aria-hidden="true"></i></button>
-                    <p class="small mt-3 mb-0">Limited Seats <span class="mx-2" aria-hidden="true">&bull;</span> Beginners Welcome</p>
+                    <button type="button" class="btn btn-custom" data-bs-toggle="modal"
+                        data-bs-target="#trainingModal">Apply Now <i class="fas fa-arrow-right ms-2"
+                            aria-hidden="true"></i></button>
+                    <p class="small mt-3 mb-0">Limited Seats <span class="mx-2" aria-hidden="true">&bull;</span>
+                        Beginners Welcome</p>
                 </div>
                 <div class="col-lg-5">
                     <div class="training-summary">
-                        <div class="training-label mb-3"><i class="fas fa-graduation-cap me-2" aria-hidden="true"></i>Your UI/UX Journey</div>
+                        <div class="training-label mb-3"><i class="fas fa-graduation-cap me-2"
+                                aria-hidden="true"></i>Your UI/UX Journey</div>
                         <h4>No Design Experience? No Problem.</h4>
                         <p class="mb-4">From Absolute Beginner to Job Ready!</p>
                         <div class="training-stats">
@@ -1836,8 +2012,10 @@
                         </div>
                         <div class="mt-4 pt-3 border-top border-secondary">
                             <h5>Got a Question?</h5>
-                            <p class="small mb-1">Chat with us on WhatsApp!</p>                            
-                            <a class="training-whatsapp" href="https://wa.me/917983744423" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp" aria-hidden="true"></i>+91 79837 44423</a>
+                            <p class="small mb-1">Chat with us on WhatsApp!</p>
+                            <a class="training-whatsapp" href="https://wa.me/917983744423" target="_blank"
+                                rel="noopener noreferrer"><i class="fab fa-whatsapp" aria-hidden="true"></i>+91 79837
+                                44423</a>
                         </div>
                     </div>
                 </div>
@@ -1850,25 +2028,32 @@
             <div class="modal-content">
                 <div class="modal-header px-4 py-3">
                     <h5 class="modal-title" id="trainingModalTitle">Apply for UI/UX Training</h5>
-                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
                 </div>
                 <div class="modal-body p-4">
-                    <p class="small">Start your 90-day design journey. Share your details and we will contact you about the course.</p>
+                    <p class="small">Start your 90-day design journey. Share your details and we will contact you about
+                        the course.</p>
                     <form action="https://formsubmit.co/vikas.vikaskumar.kumar19@gmail.com" method="POST">
                         <input type="hidden" name="_subject" value="New UI/UX Training Course Application">
                         <input type="hidden" name="_template" value="table">
                         <input type="hidden" name="course" value="UI/UX Design - 3 Months / 90 Days">
                         <div class="mb-3">
                             <label class="form-label" for="trainingName">Full Name *</label>
-                            <input class="form-control" id="trainingName" name="name" autocomplete="name" required maxlength="100" placeholder="Your full name">
+                            <input class="form-control" id="trainingName" name="name" autocomplete="name" required
+                                maxlength="100" placeholder="Your full name">
                         </div>
                         <div class="mb-3">
                             <label class="form-label" for="trainingEmail">Email Address *</label>
-                            <input class="form-control" type="email" id="trainingEmail" name="email" autocomplete="email" required maxlength="254" placeholder="you@example.com">
+                            <input class="form-control" type="email" id="trainingEmail" name="email"
+                                autocomplete="email" required maxlength="254" placeholder="you@example.com">
                         </div>
                         <div class="mb-3">
                             <label class="form-label" for="trainingPhone">Phone / WhatsApp Number *</label>
-                            <input class="form-control" type="tel" id="trainingPhone" name="phone" autocomplete="tel" required pattern="\+?[0-9][0-9 \-]{8,17}[0-9]" maxlength="20" title="Enter a phone number using 10 to 20 characters: digits, spaces, an optional leading + or hyphens." placeholder="+91 98765 43210">
+                            <input class="form-control" type="tel" id="trainingPhone" name="phone" autocomplete="tel"
+                                required pattern="\+?[0-9][0-9 \-]{8,17}[0-9]" maxlength="20"
+                                title="Enter a phone number using 10 to 20 characters: digits, spaces, an optional leading + or hyphens."
+                                placeholder="+91 98765 43210">
                         </div>
                         <div class="mb-3">
                             <label class="form-label" for="trainingExperience">Design Experience *</label>
@@ -1880,11 +2065,15 @@
                             </select>
                         </div>
                         <div class="mb-3">
-                            <label class="form-label" for="trainingMessage">Questions or Learning Goals (Optional)</label>
-                            <textarea class="form-control" id="trainingMessage" name="message" rows="3" maxlength="2000" placeholder="Tell us what you would like to learn"></textarea>
+                            <label class="form-label" for="trainingMessage">Questions or Learning Goals
+                                (Optional)</label>
+                            <textarea class="form-control" id="trainingMessage" name="message" rows="3" maxlength="2000"
+                                placeholder="Tell us what you would like to learn"></textarea>
                         </div>
-                        <p class="small">By submitting, you agree to be contacted about this course. Your details will be sent securely through FormSubmit.</p>
-                        <button type="submit" class="btn btn-custom">Submit Application <i class="fas fa-arrow-right ms-2" aria-hidden="true"></i></button>
+                        <p class="small">By submitting, you agree to be contacted about this course. Your details will
+                            be sent securely through FormSubmit.</p>
+                        <button type="submit" class="btn btn-custom">Submit Application <i
+                                class="fas fa-arrow-right ms-2" aria-hidden="true"></i></button>
                     </form>
                 </div>
             </div>
@@ -1997,7 +2186,8 @@
                 <div class="col-lg-4 col-md-6">
                     <h3 style="color: #fff; font-size: 32px; font-weight: 800; margin-bottom: 20px;">Vikas<span
                             style="color: var(--primary-gold);">.</span></h3>
-                    <p style="color: #9ca3af; line-height: 1.8; margin-bottom: 25px;">Sr. Front-End Developer & Sr. UI/UX
+                    <p style="color: #9ca3af; line-height: 1.8; margin-bottom: 25px;">Sr. Front-End Developer & Sr.
+                        UI/UX
                         Designer passionate about creating beautiful and functional web experiences.</p>
                 </div>
                 <div class="col-lg-2 col-md-6">
@@ -2026,8 +2216,8 @@
                                 onmouseout="this.style.color='#9ca3af'; this.style.paddingLeft='0';"><i
                                     class="fas fa-chevron-right"
                                     style="font-size: 10px; margin-right: 8px;"></i>Services</a></li>
-                       
-                        <li style="margin-bottom: 12px;"><a href="https://www.behance.net/imvikaskt" target="_blank" 
+
+                        <li style="margin-bottom: 12px;"><a href="https://www.behance.net/imvikaskt" target="_blank"
                                 style="color: #9ca3af; font-size: 15px; transition: 0.3s;"
                                 onmouseover="this.style.color='var(--primary-gold)'; this.style.paddingLeft='5px';"
                                 onmouseout="this.style.color='#9ca3af'; this.style.paddingLeft='0';"><i
@@ -2058,7 +2248,7 @@
                                     class="fas fa-chevron-right" style="font-size: 10px; margin-right: 8px;"></i>Figma
                                 Design</a></li>
 
-                        
+
                         <li style="margin-bottom: 12px;"><a href="javascript:void(0);"
                                 style="color: #9ca3af; font-size: 15px; transition: 0.3s;"
                                 onmouseover="this.style.color='var(--primary-gold)'; this.style.paddingLeft='5px';"
@@ -2072,30 +2262,31 @@
                                 onmouseout="this.style.color='#9ca3af'; this.style.paddingLeft='0';"><i
                                     class="fas fa-chevron-right"
                                     style="font-size: 10px; margin-right: 8px;"></i>Responsive Design</a></li>
-                        
-                        
+
+
 
                         <li style="margin-bottom: 12px;"><a href="javascript:void(0);"
                                 style="color: #9ca3af; font-size: 15px; transition: 0.3s;"
                                 onmouseover="this.style.color='var(--primary-gold)'; this.style.paddingLeft='5px';"
                                 onmouseout="this.style.color='#9ca3af'; this.style.paddingLeft='0';"><i
-                                    class="fas fa-chevron-right" style="font-size: 10px; margin-right: 8px;"></i> Mobile Application Design</a></li>
+                                    class="fas fa-chevron-right" style="font-size: 10px; margin-right: 8px;"></i> Mobile
+                                Application Design</a></li>
 
-                                <li style="margin-bottom: 12px;"><a href="javascript:void(0);"
+                        <li style="margin-bottom: 12px;"><a href="javascript:void(0);"
                                 style="color: #9ca3af; font-size: 15px; transition: 0.3s;"
                                 onmouseover="this.style.color='var(--primary-gold)'; this.style.paddingLeft='5px';"
                                 onmouseout="this.style.color='#9ca3af'; this.style.paddingLeft='0';"><i
                                     class="fas fa-chevron-right" style="font-size: 10px; margin-right: 8px;"></i>Web
                                 Design</a></li>
 
-                                    <li style="margin-bottom: 12px;"><a href="javascript:void(0);"
+                        <li style="margin-bottom: 12px;"><a href="javascript:void(0);"
                                 style="color: #9ca3af; font-size: 15px; transition: 0.3s;"
                                 onmouseover="this.style.color='var(--primary-gold)'; this.style.paddingLeft='5px';"
                                 onmouseout="this.style.color='#9ca3af'; this.style.paddingLeft='0';"><i
                                     class="fas fa-chevron-right" style="font-size: 10px; margin-right: 8px;"></i>Web
                                 Development</a></li>
 
-                                
+
                     </ul>
                 </div>
                 <div class="col-lg-3 col-md-6">
@@ -2109,7 +2300,8 @@
                         <li style="margin-bottom: 15px; display: flex; align-items: start; gap: 12px;">
                             <i class="fas fa-map-marker-alt"
                                 style="color: var(--primary-gold); font-size: 16px; margin-top: 3px;"></i>
-                            <span style="color: #9ca3af; font-size: 15px; line-height: 1.6;">Berhampur, Ghaziabad, India</span>
+                            <span style="color: #9ca3af; font-size: 15px; line-height: 1.6;">Berhampur, Ghaziabad,
+                                India</span>
                         </li>
                         <li style="margin-bottom: 15px; display: flex; align-items: start; gap: 12px;">
                             <i class="fas fa-phone"
@@ -2275,10 +2467,9 @@
 
 
     </script>
-    
-    <amp-auto-ads type="adsense"
-        data-ad-client="ca-pub-6926392316665978">
-</amp-auto-ads>
+
+    <amp-auto-ads type="adsense" data-ad-client="ca-pub-6926392316665978">
+    </amp-auto-ads>
 
 
 </body>
