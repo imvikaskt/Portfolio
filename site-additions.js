@@ -149,12 +149,14 @@
             ready.hidden = false;
             return ready.href;
         };
-        form.querySelector('.whatsapp-submit').addEventListener('click', () => {
-            if (!validate()) return;
-            const url = prepareWhatsApp(new FormData(form));
-            message('Your message is ready. Review it in WhatsApp and press Send. No email has been sent by this action.', 'ready');
-            window.open(url, '_blank', 'noopener,noreferrer');
-        });
+       
+        // form.querySelector('.whatsapp-submit').addEventListener('click', () => {
+        //     if (!validate()) return;
+        //     const url = prepareWhatsApp(new FormData(form));
+        //     message('Your message is ready. Review it in WhatsApp and press Send. No email has been sent by this action.', 'ready');
+        //     window.open(url, '_blank', 'noopener,noreferrer');
+        // });
+
         form.addEventListener('input', event => {
             if (event.target.setCustomValidity) event.target.setCustomValidity('');
             if (sending) return;
